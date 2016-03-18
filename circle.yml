@@ -6,8 +6,13 @@ test:
     - carthage update --platform iOS --no-use-binaries --use-submodules
 
     # WhirlyGlobe submodule setup and build
+    # First update only gets our own submodule - which is WhirlyGlobe
+    - git submodule update --init
+
+    # Now we need the correct tag
     - cd Submodules
     - git checkout tags/v2.4.1_beta3
+    # Now get submodules for WhirlyGlobe
     - git submodule update --init --recursive
     - cd ..
 
