@@ -30,6 +30,20 @@
 			remoteGlobalIDString = 3DC344871C9C2A1F003D7F09;
 			remoteInfo = MaplyAdapter;
 		};
+		3DC344BF1C9C515E003D7F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC344BA1C9C515E003D7F09 /* WhirlyGlobe-MaplyComponent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2B11E0DB15B4C030007AAE3F;
+			remoteInfo = "WhirlyGlobe-MaplyComponent";
+		};
+		3DC344C31C9C5196003D7F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC344BA1C9C515E003D7F09 /* WhirlyGlobe-MaplyComponent.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B11E0DA15B4C030007AAE3F;
+			remoteInfo = "WhirlyGlobe-MaplyComponent";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +76,7 @@
 		3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTileSourceFactory.h; sourceTree = "<group>"; };
 		3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTileSourceFactory.m; sourceTree = "<group>"; };
 		3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSGridPointConversion.framework; path = Carthage/Build/iOS/OSGridPointConversion.framework; sourceTree = SOURCE_ROOT; };
+		3DC344BA1C9C515E003D7F09 /* WhirlyGlobe-MaplyComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "WhirlyGlobe-MaplyComponent.xcodeproj"; path = "Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/WhirlyGlobe-MaplyComponent.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +131,7 @@
 				3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */,
 				3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */,
 				3DC3448D1C9C2A1F003D7F09 /* Info.plist */,
+				3DC344BA1C9C515E003D7F09 /* WhirlyGlobe-MaplyComponent.xcodeproj */,
 			);
 			path = MaplyAdapter;
 			sourceTree = "<group>";
@@ -127,6 +143,14 @@
 				3DC344991C9C2A1F003D7F09 /* Info.plist */,
 			);
 			path = MaplyAdapterTests;
+			sourceTree = "<group>";
+		};
+		3DC344BB1C9C515E003D7F09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC344C01C9C515E003D7F09 /* libWhirlyGlobe-MaplyComponent.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +183,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3DC344C41C9C5196003D7F09 /* PBXTargetDependency */,
 			);
 			name = MaplyAdapter;
 			productName = MaplyAdapter;
@@ -212,6 +237,12 @@
 			mainGroup = 3DC3447E1C9C2A1F003D7F09;
 			productRefGroup = 3DC344891C9C2A1F003D7F09 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3DC344BB1C9C515E003D7F09 /* Products */;
+					ProjectRef = 3DC344BA1C9C515E003D7F09 /* WhirlyGlobe-MaplyComponent.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3DC344871C9C2A1F003D7F09 /* MaplyAdapter */,
@@ -219,6 +250,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3DC344C01C9C515E003D7F09 /* libWhirlyGlobe-MaplyComponent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libWhirlyGlobe-MaplyComponent.a";
+			remoteRef = 3DC344BF1C9C515E003D7F09 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3DC344861C9C2A1F003D7F09 /* Resources */ = {
@@ -264,6 +305,11 @@
 			isa = PBXTargetDependency;
 			target = 3DC344871C9C2A1F003D7F09 /* MaplyAdapter */;
 			targetProxy = 3DC344941C9C2A1F003D7F09 /* PBXContainerItemProxy */;
+		};
+		3DC344C41C9C5196003D7F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "WhirlyGlobe-MaplyComponent";
+			targetProxy = 3DC344C31C9C5196003D7F09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
