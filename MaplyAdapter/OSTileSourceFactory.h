@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+@class MaplyQuadImageTilesLayer;
 
 @interface OSTileSourceFactory : NSObject
 

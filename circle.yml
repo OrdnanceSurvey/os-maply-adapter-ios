@@ -7,10 +7,10 @@ test:
 
     # WhirlyGlobe submodule setup and build
     - git submodule add git@github.com:mousebird/WhirlyGlobe.git Submodules
-    - git submodule update --init --recursive
     - cd Submodules
-    - git checkout tags/v2.4
-    - cd ../..
+    - git checkout tags/v2.4.1_beta3
+    - git submodule update --init --recursive
+    - cd ..
 
     - set -o pipefail && xcodebuild -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
       -sdk iphonesimulator -scheme "MaplyAdapter" clean test |
