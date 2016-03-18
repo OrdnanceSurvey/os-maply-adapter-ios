@@ -13,7 +13,7 @@
 @implementation OSBNGUtils
 
 + (MaplyProj4CoordSystem *)bngCoordinateSystem {
-    NSString *proj4Str = [OSBNGTransformation proj4String];
+    NSString *proj4Str = [OSBNGTransformation sevenParamProj4String];
     MaplyProj4CoordSystem *coordSys = [[MaplyProj4CoordSystem alloc] initWithString:proj4Str];
     return coordSys;
 }

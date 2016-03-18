@@ -44,7 +44,7 @@
     // to overfetch OS Maps, so we'll back off a bit.  Smaller number for even more backing off
     layer.importanceScale = 0.5;
     layer.singleLevelLoading = true;
-    layer.multiLevelLoads = @[ @(-3) ];
+    layer.multiLevelLoads = @[ @-3 ];
     return layer;
 }
 
