@@ -63,5 +63,3 @@ fastlane/report.xml
 fastlane/screenshots
 APIKEY
 
-# WhirlyGlobe-Maply and its associated submodules are checked out here
-Submodules/WhirlyGlobe
