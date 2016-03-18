@@ -1,6 +1,10 @@
 machine:
   xcode:
     version: "7.2"
+checkout:
+   post:
+     - git config --global user.name "Mobile Build"       
+     - git config --global user.email mobiledevelopers@ordnancesurvey.co.uk
 test:
   override:
     - carthage update --platform iOS --no-use-binaries
