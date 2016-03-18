@@ -3,7 +3,7 @@ machine:
     version: "7.2"
 test:
   override:
-    - carthage update --platform iOS --no-use-binaries --use-submodules
+    - carthage update --platform iOS --no-use-binaries
 
     # WhirlyGlobe submodule setup and build
     # First update only gets our own submodule - which is WhirlyGlobe
