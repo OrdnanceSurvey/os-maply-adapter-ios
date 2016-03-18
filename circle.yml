@@ -6,7 +6,6 @@ test:
     - carthage update --platform iOS --no-use-binaries --use-submodules
 
     # WhirlyGlobe submodule setup and build
-    - git submodule add git@github.com:mousebird/WhirlyGlobe.git Submodules
     - cd Submodules
     - git checkout tags/v2.4.1_beta3
     - git submodule update --init --recursive
