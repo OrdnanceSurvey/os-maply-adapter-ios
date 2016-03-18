@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import WhirlyGlobe;
-
-@class MaplyRemoteTileInfo;
+#import "MaplyRemoteTileSource.h"
 
 @interface OSRemoteTileInfo : MaplyRemoteTileInfo
 

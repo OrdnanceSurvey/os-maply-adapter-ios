@@ -10,14 +10,16 @@
 		3DC3448C1C9C2A1F003D7F09 /* MaplyAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC3448B1C9C2A1F003D7F09 /* MaplyAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344931C9C2A1F003D7F09 /* MaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; };
 		3DC344981C9C2A1F003D7F09 /* MaplyAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344971C9C2A1F003D7F09 /* MaplyAdapterTests.swift */; };
-		3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */; };
+		3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344AD1C9C2EB6003D7F09 /* OSBNGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */; };
 		3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A61C9C2EB6003D7F09 /* OSMapsAPI.h */; };
 		3DC344AF1C9C2EB6003D7F09 /* OSMapsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A71C9C2EB6003D7F09 /* OSMapsAPI.m */; };
 		3DC344B01C9C2EB6003D7F09 /* OSRemoteTileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A81C9C2EB6003D7F09 /* OSRemoteTileInfo.h */; };
 		3DC344B11C9C2EB6003D7F09 /* OSRemoteTileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */; };
-		3DC344B21C9C2EB6003D7F09 /* OSTileSourceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */; };
+		3DC344B21C9C2EB6003D7F09 /* OSTileSourceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344B31C9C2EB6003D7F09 /* OSTileSourceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */; };
+		3DC344B61C9C3DEE003D7F09 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; };
+		3DC344B81C9C3F2A003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,20 @@
 			remoteInfo = MaplyAdapter;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DC344B71C9C3F20003D7F09 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				3DC344B81C9C3F2A003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaplyAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +61,7 @@
 		3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRemoteTileInfo.m; sourceTree = "<group>"; };
 		3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTileSourceFactory.h; sourceTree = "<group>"; };
 		3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTileSourceFactory.m; sourceTree = "<group>"; };
+		3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSGridPointConversion.framework; path = Carthage/Build/iOS/OSGridPointConversion.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC344B61C9C3DEE003D7F09 /* OSGridPointConversion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +114,7 @@
 				3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */,
 				3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */,
 				3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */,
+				3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */,
 				3DC3448D1C9C2A1F003D7F09 /* Info.plist */,
 			);
 			path = MaplyAdapter;
@@ -153,6 +172,7 @@
 				3DC3448E1C9C2A1F003D7F09 /* Sources */,
 				3DC3448F1C9C2A1F003D7F09 /* Frameworks */,
 				3DC344901C9C2A1F003D7F09 /* Resources */,
+				3DC344B71C9C3F20003D7F09 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +364,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MaplyAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -360,6 +384,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MaplyAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

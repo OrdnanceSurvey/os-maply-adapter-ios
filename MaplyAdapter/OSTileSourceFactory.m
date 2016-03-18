@@ -7,7 +7,7 @@
 //
 
 #import "OSTileSourceFactory.h"
-@import WhirlyGlobe;
+#import "MaplyComponent.h"
 #import "OSBNGUtils.h"
 #import "OSMapsAPI.h"
 #import "OSRemoteTileInfo.h"

@@ -8,7 +8,7 @@
 
 #import "OSBNGUtils.h"
 @import OSGridPointConversion;
-@import WhirlyGlobe;
+#import "MaplyComponent.h"
 
 @implementation OSBNGUtils
 
