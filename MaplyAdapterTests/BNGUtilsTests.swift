@@ -19,5 +19,4 @@ class BNGUtilsTests: XCTestCase {
         XCTAssert(true)
     }
 
-
 }

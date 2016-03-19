@@ -14,23 +14,24 @@
     NSString *baseURL = @"https://api2.ordnancesurvey.co.uk/mapping_api/v1/service";
     if ([service isEqualToString:@"wmts"]) {
         baseURL = [baseURL stringByAppendingPathComponent:@"wmts"];
+
         NSArray<NSURLQueryItem *> *query = @[
             [NSURLQueryItem queryItemWithName:@"key"
                                         value:[self apiKey]],
             [NSURLQueryItem queryItemWithName:@"height" value:@"256"],
             [NSURLQueryItem queryItemWithName:@"width" value:@"256"],
             [NSURLQueryItem queryItemWithName:@"tilematrixSet"
-                                        value:[srs stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]],
+                                        value:        [srs stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]],
             [NSURLQueryItem queryItemWithName:@"version" value:@"1.0.0"],
             [NSURLQueryItem queryItemWithName:@"style" value:@""],
             [NSURLQueryItem queryItemWithName:@"layer"
-                                        value:[layer stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]],
+                                        value:[layer stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]],
             [NSURLQueryItem queryItemWithName:@"SERVICE" value:@"WMTS"],
             [NSURLQueryItem queryItemWithName:@"REQUEST" value:@"GetTile"],
             [NSURLQueryItem queryItemWithName:@"format" value:@"image/png"],
             [NSURLQueryItem queryItemWithName:@"TileMatrix"
                                         value:[[[srs stringByAppendingString:@":"]
-                                                  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]
+                                                  stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]
                                                   stringByAppendingString:@"{z}"]],
             [NSURLQueryItem queryItemWithName:@"TileRow" value:@"{y}"],
             [NSURLQueryItem queryItemWithName:@"TileCol" value:@"{x}"],
@@ -46,8 +47,8 @@
         baseURL = [baseURL stringByAppendingString:queryString];
     } else {
         baseURL = [baseURL stringByAppendingPathComponent:@"zxy"];
-        baseURL = [baseURL stringByAppendingPathComponent:[srs stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-        baseURL = [baseURL stringByAppendingPathComponent:[layer stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        baseURL = [baseURL stringByAppendingPathComponent:[srs stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+        baseURL = [baseURL stringByAppendingPathComponent:[layer stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
         baseURL = [baseURL stringByAppendingPathComponent:@"{z}"];
         baseURL = [baseURL stringByAppendingPathComponent:@"{x}"];
         baseURL = [baseURL stringByAppendingPathComponent:@"{y}"];
