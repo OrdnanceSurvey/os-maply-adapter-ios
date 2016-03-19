@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) MaplyViewController *maplyViewController;
 
+
 @end
 
 @implementation ViewController
@@ -24,7 +25,7 @@
     // Create map and tile layer
     self.maplyViewController = [self createMaplyViewController];
     [self addMapToViewHierarchy];
-    MaplyQuadImageTilesLayer *tileLayer = [OSTileSourceFactory create27700TileLayer];
+    MaplyQuadImageTilesLayer *tileLayer = [OSTileSourceFactory create3857TileLayer];
     [self.maplyViewController addLayer:tileLayer];
 
     // Create test marker
@@ -38,9 +39,9 @@
     [self.maplyViewController addScreenMarkers:@[ marker ] desc:nil mode:MaplyThreadAny];
 
     // Set initial map position to the centre of GB
-    MaplyCoordinate centreOfGB = MaplyCoordinateMakeWithDegrees(-2.42, 54.83);
+    MaplyCoordinate centreOfGB = MaplyCoordinateMakeWithDegrees(54.83, -2.42);
     MaplyCoordinate centreOfGBLocal = [self.maplyViewController.coordSys geoToLocal:centreOfGB];
-    [self.maplyViewController setPosition:centreOfGBLocal height:1.7];
+    [self.maplyViewController setPosition:centreOfGBLocal height:1.2];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,7 +50,6 @@
 
 - (MaplyViewController *)createMaplyViewController {
     MaplyViewController *maplyViewController = [[MaplyViewController alloc] initWithMapType:MaplyMapTypeFlat];
-    maplyViewController.coordSys = [OSBNGUtils buildBritishNationalGrid];
     maplyViewController.viewWrap = false;
     maplyViewController.doubleTapZoomGesture = true;
     maplyViewController.twoFingerTapGesture = true;
