@@ -32,6 +32,16 @@
 		3DC344E71C9DFC14003D7F09 /* OSMapsAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E61C9DFC14003D7F09 /* OSMapsAPITests.m */; };
 		3DC344E91C9E030F003D7F09 /* OSTileSourceFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E81C9E030F003D7F09 /* OSTileSourceFactoryTests.m */; };
 		3DC344EB1C9E05F5003D7F09 /* OSRemoteTileInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344EA1C9E05F4003D7F09 /* OSRemoteTileInfoTests.m */; };
+		3DC344F41C9E1076003D7F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344F31C9E1076003D7F09 /* main.m */; };
+		3DC344F71C9E1076003D7F09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344F61C9E1076003D7F09 /* AppDelegate.m */; };
+		3DC344FA1C9E1076003D7F09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344F91C9E1076003D7F09 /* ViewController.m */; };
+		3DC344FD1C9E1076003D7F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC344FB1C9E1076003D7F09 /* Main.storyboard */; };
+		3DC344FF1C9E1076003D7F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC344FE1C9E1076003D7F09 /* Assets.xcassets */; };
+		3DC345021C9E1076003D7F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC345001C9E1076003D7F09 /* LaunchScreen.storyboard */; };
+		3DC345091C9E12E4003D7F09 /* MaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; };
+		3DC3450B1C9E1332003D7F09 /* MaplyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DC3450C1C9E13EB003D7F09 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; };
+		3DC3450D1C9E13F1003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +66,13 @@
 			remoteGlobalIDString = 2B11E0DA15B4C030007AAE3F;
 			remoteInfo = "WhirlyGlobe-MaplyComponent";
 		};
+		3DC345071C9E1218003D7F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC3447F1C9C2A1F003D7F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC344871C9C2A1F003D7F09;
+			remoteInfo = MaplyAdapter;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +84,18 @@
 			files = (
 				3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */,
 				3DC344DA1C9DEAAD003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC3450A1C9E1324003D7F09 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DC3450B1C9E1332003D7F09 /* MaplyAdapter.framework in Embed Frameworks */,
+				3DC3450D1C9E13F1003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +128,16 @@
 		3DC344E61C9DFC14003D7F09 /* OSMapsAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMapsAPITests.m; sourceTree = "<group>"; };
 		3DC344E81C9E030F003D7F09 /* OSTileSourceFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTileSourceFactoryTests.m; sourceTree = "<group>"; };
 		3DC344EA1C9E05F4003D7F09 /* OSRemoteTileInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRemoteTileInfoTests.m; sourceTree = "<group>"; };
+		3DC344F01C9E1076003D7F09 /* MaplyExampleObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaplyExampleObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC344F31C9E1076003D7F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DC344F51C9E1076003D7F09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DC344F61C9E1076003D7F09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DC344F81C9E1076003D7F09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3DC344F91C9E1076003D7F09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3DC344FC1C9E1076003D7F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DC344FE1C9E1076003D7F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC345011C9E1076003D7F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DC345031C9E1076003D7F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +165,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DC344ED1C9E1076003D7F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC345091C9E12E4003D7F09 /* MaplyAdapter.framework in Frameworks */,
+				3DC3450C1C9E13EB003D7F09 /* OSGridPointConversion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,6 +182,7 @@
 			children = (
 				3DC3448A1C9C2A1F003D7F09 /* MaplyAdapter */,
 				3DC344961C9C2A1F003D7F09 /* MaplyAdapterTests */,
+				3DC344F11C9E1076003D7F09 /* MaplyExampleObjC */,
 				3DC344891C9C2A1F003D7F09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +192,7 @@
 			children = (
 				3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */,
 				3DC344921C9C2A1F003D7F09 /* MaplyAdapterTests.xctest */,
+				3DC344F01C9E1076003D7F09 /* MaplyExampleObjC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +248,30 @@
 				3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DC344F11C9E1076003D7F09 /* MaplyExampleObjC */ = {
+			isa = PBXGroup;
+			children = (
+				3DC344F51C9E1076003D7F09 /* AppDelegate.h */,
+				3DC344F61C9E1076003D7F09 /* AppDelegate.m */,
+				3DC344F81C9E1076003D7F09 /* ViewController.h */,
+				3DC344F91C9E1076003D7F09 /* ViewController.m */,
+				3DC344FB1C9E1076003D7F09 /* Main.storyboard */,
+				3DC344FE1C9E1076003D7F09 /* Assets.xcassets */,
+				3DC345001C9E1076003D7F09 /* LaunchScreen.storyboard */,
+				3DC345031C9E1076003D7F09 /* Info.plist */,
+				3DC344F21C9E1076003D7F09 /* Supporting Files */,
+			);
+			path = MaplyExampleObjC;
+			sourceTree = "<group>";
+		};
+		3DC344F21C9E1076003D7F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DC344F31C9E1076003D7F09 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +330,25 @@
 			productReference = 3DC344921C9C2A1F003D7F09 /* MaplyAdapterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3DC344EF1C9E1076003D7F09 /* MaplyExampleObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC345041C9E1076003D7F09 /* Build configuration list for PBXNativeTarget "MaplyExampleObjC" */;
+			buildPhases = (
+				3DC344EC1C9E1076003D7F09 /* Sources */,
+				3DC344ED1C9E1076003D7F09 /* Frameworks */,
+				3DC344EE1C9E1076003D7F09 /* Resources */,
+				3DC3450A1C9E1324003D7F09 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC345081C9E1218003D7F09 /* PBXTargetDependency */,
+			);
+			name = MaplyExampleObjC;
+			productName = MaplyExampleObjC;
+			productReference = 3DC344F01C9E1076003D7F09 /* MaplyExampleObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -272,6 +365,9 @@
 					3DC344911C9C2A1F003D7F09 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					3DC344EF1C9E1076003D7F09 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 3DC344821C9C2A1F003D7F09 /* Build configuration list for PBXProject "MaplyAdapter" */;
@@ -280,6 +376,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 3DC3447E1C9C2A1F003D7F09;
 			productRefGroup = 3DC344891C9C2A1F003D7F09 /* Products */;
@@ -294,6 +391,7 @@
 			targets = (
 				3DC344871C9C2A1F003D7F09 /* MaplyAdapter */,
 				3DC344911C9C2A1F003D7F09 /* MaplyAdapterTests */,
+				3DC344EF1C9E1076003D7F09 /* MaplyExampleObjC */,
 			);
 		};
 /* End PBXProject section */
@@ -323,6 +421,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DC344EE1C9E1076003D7F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC345021C9E1076003D7F09 /* LaunchScreen.storyboard in Resources */,
+				3DC344FF1C9E1076003D7F09 /* Assets.xcassets in Resources */,
+				3DC344FD1C9E1076003D7F09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -348,6 +456,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3DC344EC1C9E1076003D7F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC344FA1C9E1076003D7F09 /* ViewController.m in Sources */,
+				3DC344F71C9E1076003D7F09 /* AppDelegate.m in Sources */,
+				3DC344F41C9E1076003D7F09 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -361,7 +479,31 @@
 			name = "WhirlyGlobe-MaplyComponent";
 			targetProxy = 3DC344C31C9C5196003D7F09 /* PBXContainerItemProxy */;
 		};
+		3DC345081C9E1218003D7F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC344871C9C2A1F003D7F09 /* MaplyAdapter */;
+			targetProxy = 3DC345071C9E1218003D7F09 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DC344FB1C9E1076003D7F09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC344FC1C9E1076003D7F09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC345001C9E1076003D7F09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC345011C9E1076003D7F09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3DC3449A1C9C2A1F003D7F09 /* Debug */ = {
@@ -533,6 +675,36 @@
 			};
 			name = Release;
 		};
+		3DC345051C9E1076003D7F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MaplyExampleObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyExampleObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DC345061C9E1076003D7F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MaplyExampleObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyExampleObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -562,6 +734,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3DC345041C9E1076003D7F09 /* Build configuration list for PBXNativeTarget "MaplyExampleObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC345051C9E1076003D7F09 /* Debug */,
+				3DC345061C9E1076003D7F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
