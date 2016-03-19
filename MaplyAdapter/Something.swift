@@ -1,16 +1,14 @@
 //
-//  MapsAPITests.swift
+//  Something.swift
 //  MaplyAdapter
 //
 //  Created by David Haynes on 19/03/2016.
 //  Copyright © 2016 Ordnance Survey. All rights reserved.
 //
 
-import XCTest
+import Foundation
 
-class MapsAPITests: XCTestCase {
-    
-    func testExample() {
-        XCTAssert(true)
-    }
+struct Something {
+    let x: Float
+    let y: Float
 }
