@@ -20,6 +20,11 @@
 - (void)testTheTileInfoSubclassTranslatesRequestsCorrectly {
     MaplyQuadImageTilesLayer *testLayer = [OSTileSourceFactory create27700TileLayer];
     expect(testLayer).toNot.beNil();
+
+    // Value for key is used here as OSTileInfo is not a public class in the adapter
+    // framework, and cannot be made so, due to it being a subclass of a Maply class,
+    // thus requiring inclusion of a non-module header (MaplyRemoteTileInfo) in its
+    // own header.
     MaplyRemoteTileSource *testTileSource = [testLayer valueForKey:@"_tileSource"];
     expect(testTileSource).toNot.beNil();
     MaplyRemoteTileInfo *testInfo = [testTileSource valueForKey:@"_tileInfo"];
