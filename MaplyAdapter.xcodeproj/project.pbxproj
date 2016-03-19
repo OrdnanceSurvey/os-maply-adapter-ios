@@ -498,6 +498,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyAdapterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapterTests;
@@ -515,6 +516,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyAdapterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapterTests;
