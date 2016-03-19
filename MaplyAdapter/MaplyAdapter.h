@@ -15,4 +15,5 @@ FOUNDATION_EXPORT double MaplyAdapterVersionNumber;
 FOUNDATION_EXPORT const unsigned char MaplyAdapterVersionString[];
 
 #import "OSBNGUtils.h"
+#import "OSMapsAPI.h"
 #import "OSTileSourceFactory.h"
