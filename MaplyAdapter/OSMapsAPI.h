@@ -14,10 +14,10 @@
  *  Build a URL for accessing the OS Maps API
  *
  *  @param srs     The spatial reference
- *  @param layer   <#layer description#>
- *  @param service <#service description#>
+ *  @param layer   The layer required
+ *  @param service The service required
  *
- *  @return <#return value description#>
+ *  @return The URL template for the service with given configuration.
  */
 + (NSString *)URLForSRS:(NSString *)srs layer:(NSString *)layer service:(NSString *)service;
 
