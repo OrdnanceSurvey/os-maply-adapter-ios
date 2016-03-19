@@ -1,8 +1,8 @@
 //
 //  OSBNGUtils.m
-//  Maply
+//  MaplyAdapter
 //
-//  Created by David on 12/01/2016.
+//  Created by David Haynes on 12/01/2016.
 //  Copyright © 2016 Ordnance Survey. All rights reserved.
 //
 
@@ -55,7 +55,7 @@
     bbox.ur.x = rightRW;
     bbox.ur.y = topRW;
 
-    // Top left corner from wmts is -238375.0 1376256.0?
+    // Top left corner from wmts is -238375.0 1376256.0
     [coordSys setBounds:bbox];
     return coordSys;
 }

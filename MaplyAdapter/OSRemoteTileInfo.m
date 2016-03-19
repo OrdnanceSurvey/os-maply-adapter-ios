@@ -1,8 +1,8 @@
 //
 //  OSRemoteTileInfo.m
-//  Maply
+//  MaplyAdapter
 //
-//  Created by David on 07/01/2016.
+//  Created by David Haynes on 07/01/2016.
 //  Copyright © 2016 Ordnance Survey. All rights reserved.
 //
 
