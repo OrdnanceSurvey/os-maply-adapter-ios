@@ -22,9 +22,6 @@
                                   withString:[@(col) stringValue]]
         stringByReplacingOccurrencesOfString:@"{y}"
                                   withString:[@(row) stringValue]];
-    if (self.ext) {
-        fullURLStr = [NSString stringWithFormat:@"%@.%@", fullURLStr, self.ext];
-    }
 
     return [NSMutableURLRequest requestWithURL:[NSURL URLWithString:fullURLStr]];
 }
