@@ -1,0 +1,25 @@
+machine:
+  xcode:
+    version: "7.2"
+test:
+  override:
+    - carthage update --platform iOS --no-use-binaries
+
+    # WhirlyGlobe submodule setup and build
+    # First update only gets our own submodule - which is WhirlyGlobe
+    - git submodule update --init
+
+    # Now we need the correct tag
+    - cd Submodules
+    - git checkout tags/v2.4.1_beta3
+    # Now get submodules for WhirlyGlobe
+    - git submodule update --init --recursive
+    - cd ..
+
+    - set -o pipefail && xcodebuild -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
+      -sdk iphonesimulator -scheme "MaplyAdapter" clean test |
+      tee $CIRCLE_ARTIFACTS/xcodebuild.log |
+      xcpretty --report html --output $CIRCLE_TEST_REPORTS/results.html --report junit --output $CIRCLE_TEST_REPORTS/results.xml
+  post:
+    - bundle exec slather
+
