@@ -11,8 +11,6 @@ import XCTest
 
 class BNGUtilsTests: XCTestCase {
 
-//    + (MaplyCoordinateSystem *)buildBritishNationalGrid;
-//    + (MaplyCoordinateSystem *)bngForTileSource;
     func testItIsPossibleToConstructAStandardBNGCoordinateSystem() {
         XCTAssert(true)
     }
