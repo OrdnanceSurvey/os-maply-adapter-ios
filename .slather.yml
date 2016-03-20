@@ -1,6 +1,6 @@
 coverage_service: coveralls
 ci_service: circleci
-xcodeproj: Search.xcodeproj
+xcodeproj: MaplyAdapter.xcodeproj
 ignore:
   - Carthage/*
   - MaplyExampleSwift/*
