@@ -1,0 +1,9 @@
+coverage_service: coveralls
+ci_service: circleci
+xcodeproj: Search.xcodeproj
+ignore:
+  - Carthage/*
+  - MaplyExampleSwift/*
+  - MaplyExampleObjC/*
+  - Submodules/*
+
