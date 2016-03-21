@@ -25,7 +25,7 @@
     // Create map and tile layer
     self.maplyViewController = [self createMaplyViewController];
     [self addMapToViewHierarchy];
-    MaplyQuadImageTilesLayer *tileLayer = [OSTileSourceFactory create3857TileLayer];
+    MaplyQuadImageTilesLayer *tileLayer = [OSTileSourceFactory create27700TileLayer];
     [self.maplyViewController addLayer:tileLayer];
 
     // Create test marker
@@ -54,6 +54,7 @@
     maplyViewController.doubleTapZoomGesture = true;
     maplyViewController.twoFingerTapGesture = true;
     maplyViewController.cancelAnimationOnTouch = true;
+    maplyViewController.coordSys = [OSBNGUtils buildBritishNationalGrid];
     maplyViewController.delegate = self;
     return maplyViewController;
 }
