@@ -1,8 +1,8 @@
 //
 //  OSRemoteTileInfo.m
-//  Maply
+//  MaplyAdapter
 //
-//  Created by David on 07/01/2016.
+//  Created by David Haynes on 07/01/2016.
 //  Copyright © 2016 Ordnance Survey. All rights reserved.
 //
 
@@ -22,9 +22,6 @@
                                   withString:[@(col) stringValue]]
         stringByReplacingOccurrencesOfString:@"{y}"
                                   withString:[@(row) stringValue]];
-    if (self.ext) {
-        fullURLStr = [NSString stringWithFormat:@"%@.%@", fullURLStr, self.ext];
-    }
 
     return [NSMutableURLRequest requestWithURL:[NSURL URLWithString:fullURLStr]];
 }

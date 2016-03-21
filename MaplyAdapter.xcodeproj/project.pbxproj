@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		3DC3448C1C9C2A1F003D7F09 /* MaplyAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC3448B1C9C2A1F003D7F09 /* MaplyAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344931C9C2A1F003D7F09 /* MaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; };
-		3DC344981C9C2A1F003D7F09 /* MaplyAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344971C9C2A1F003D7F09 /* MaplyAdapterTests.swift */; };
 		3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344AD1C9C2EB6003D7F09 /* OSBNGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */; };
-		3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A61C9C2EB6003D7F09 /* OSMapsAPI.h */; };
+		3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A61C9C2EB6003D7F09 /* OSMapsAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344AF1C9C2EB6003D7F09 /* OSMapsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A71C9C2EB6003D7F09 /* OSMapsAPI.m */; };
 		3DC344B01C9C2EB6003D7F09 /* OSRemoteTileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A81C9C2EB6003D7F09 /* OSRemoteTileInfo.h */; };
 		3DC344B11C9C2EB6003D7F09 /* OSRemoteTileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */; };
 		3DC344B21C9C2EB6003D7F09 /* OSTileSourceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344B31C9C2EB6003D7F09 /* OSTileSourceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */; };
 		3DC344B61C9C3DEE003D7F09 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; };
-		3DC344B81C9C3F2A003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DC344C51C9C546E003D7F09 /* libWhirlyGlobe-MaplyComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C01C9C515E003D7F09 /* libWhirlyGlobe-MaplyComponent.a */; };
 		3DC344C71C9C5482003D7F09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C61C9C5482003D7F09 /* CoreLocation.framework */; };
 		3DC344C91C9C5490003D7F09 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C81C9C5490003D7F09 /* libsqlite3.tbd */; };
 		3DC344CB1C9C549D003D7F09 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CA1C9C549D003D7F09 /* libxml2.tbd */; };
 		3DC344CD1C9C54A9003D7F09 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CC1C9C54A9003D7F09 /* libc++.tbd */; };
 		3DC344CF1C9C54B6003D7F09 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CE1C9C54B6003D7F09 /* libz.tbd */; };
+		3DC344DA1C9DEAAD003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DC344DB1C9DEAAF003D7F09 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; };
+		3DC344E21C9DF2CF003D7F09 /* OSBNGUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E11C9DF2CF003D7F09 /* OSBNGUtilsTests.m */; };
+		3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344E31C9DF5BB003D7F09 /* Expecta.framework */; };
+		3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344E31C9DF5BB003D7F09 /* Expecta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DC344E71C9DFC14003D7F09 /* OSMapsAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E61C9DFC14003D7F09 /* OSMapsAPITests.m */; };
+		3DC344E91C9E030F003D7F09 /* OSTileSourceFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E81C9E030F003D7F09 /* OSTileSourceFactoryTests.m */; };
+		3DC344EB1C9E05F5003D7F09 /* OSRemoteTileInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344EA1C9E05F4003D7F09 /* OSRemoteTileInfoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +63,10 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 10;
 			files = (
-				3DC344B81C9C3F2A003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */,
+				3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */,
+				3DC344DA1C9DEAAD003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +78,6 @@
 		3DC3448B1C9C2A1F003D7F09 /* MaplyAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaplyAdapter.h; sourceTree = "<group>"; };
 		3DC3448D1C9C2A1F003D7F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC344921C9C2A1F003D7F09 /* MaplyAdapterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaplyAdapterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DC344971C9C2A1F003D7F09 /* MaplyAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaplyAdapterTests.swift; sourceTree = "<group>"; };
 		3DC344991C9C2A1F003D7F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSBNGUtils.h; sourceTree = "<group>"; };
 		3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSBNGUtils.m; sourceTree = "<group>"; };
@@ -88,6 +94,11 @@
 		3DC344CA1C9C549D003D7F09 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		3DC344CC1C9C54A9003D7F09 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		3DC344CE1C9C54B6003D7F09 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3DC344E11C9DF2CF003D7F09 /* OSBNGUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSBNGUtilsTests.m; sourceTree = "<group>"; };
+		3DC344E31C9DF5BB003D7F09 /* Expecta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Expecta.framework; path = Carthage/Build/iOS/Expecta.framework; sourceTree = SOURCE_ROOT; };
+		3DC344E61C9DFC14003D7F09 /* OSMapsAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMapsAPITests.m; sourceTree = "<group>"; };
+		3DC344E81C9E030F003D7F09 /* OSTileSourceFactoryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTileSourceFactoryTests.m; sourceTree = "<group>"; };
+		3DC344EA1C9E05F4003D7F09 /* OSRemoteTileInfoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRemoteTileInfoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +120,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */,
 				3DC344931C9C2A1F003D7F09 /* MaplyAdapter.framework in Frameworks */,
+				3DC344DB1C9DEAAF003D7F09 /* OSGridPointConversion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +132,6 @@
 		3DC3447E1C9C2A1F003D7F09 = {
 			isa = PBXGroup;
 			children = (
-				3DC344C61C9C5482003D7F09 /* CoreLocation.framework */,
 				3DC3448A1C9C2A1F003D7F09 /* MaplyAdapter */,
 				3DC344961C9C2A1F003D7F09 /* MaplyAdapterTests */,
 				3DC344891C9C2A1F003D7F09 /* Products */,
@@ -157,8 +169,12 @@
 		3DC344961C9C2A1F003D7F09 /* MaplyAdapterTests */ = {
 			isa = PBXGroup;
 			children = (
-				3DC344971C9C2A1F003D7F09 /* MaplyAdapterTests.swift */,
+				3DC344E11C9DF2CF003D7F09 /* OSBNGUtilsTests.m */,
+				3DC344E61C9DFC14003D7F09 /* OSMapsAPITests.m */,
+				3DC344E81C9E030F003D7F09 /* OSTileSourceFactoryTests.m */,
+				3DC344EA1C9E05F4003D7F09 /* OSRemoteTileInfoTests.m */,
 				3DC344991C9C2A1F003D7F09 /* Info.plist */,
+				3DC344E31C9DF5BB003D7F09 /* Expecta.framework */,
 			);
 			path = MaplyAdapterTests;
 			sourceTree = "<group>";
@@ -174,6 +190,7 @@
 		3DC344D01C9C54D4003D7F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DC344C61C9C5482003D7F09 /* CoreLocation.framework */,
 				3DC344CE1C9C54B6003D7F09 /* libz.tbd */,
 				3DC344CC1C9C54A9003D7F09 /* libc++.tbd */,
 				3DC344CA1C9C549D003D7F09 /* libxml2.tbd */,
@@ -191,10 +208,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC344B21C9C2EB6003D7F09 /* OSTileSourceFactory.h in Headers */,
-				3DC344B01C9C2EB6003D7F09 /* OSRemoteTileInfo.h in Headers */,
-				3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */,
 				3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */,
+				3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */,
 				3DC3448C1C9C2A1F003D7F09 /* MaplyAdapter.h in Headers */,
+				3DC344B01C9C2EB6003D7F09 /* OSRemoteTileInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC344981C9C2A1F003D7F09 /* MaplyAdapterTests.swift in Sources */,
+				3DC344E91C9E030F003D7F09 /* OSTileSourceFactoryTests.m in Sources */,
+				3DC344EB1C9E05F5003D7F09 /* OSRemoteTileInfoTests.m in Sources */,
+				3DC344E21C9DF2CF003D7F09 /* OSBNGUtilsTests.m in Sources */,
+				3DC344E71C9DFC14003D7F09 /* OSMapsAPITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +456,7 @@
 		3DC3449D1C9C2A1F003D7F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -451,12 +472,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3DC3449E1C9C2A1F003D7F09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -478,20 +501,35 @@
 		3DC344A01C9C2A1F003D7F09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyAdapterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MaplyAdapterTests/MaplyAdapterTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		3DC344A11C9C2A1F003D7F09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyAdapterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MaplyAdapterTests/MaplyAdapterTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
