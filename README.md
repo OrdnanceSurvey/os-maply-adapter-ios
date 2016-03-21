@@ -16,14 +16,14 @@ Steps to do this are outlined below:
 4. `$ cd Submodules`, which now contains the WG-Maply repo.
 4. Checkout maply tag v2.4.1_beta3 (current version the framework supports): `$ git checkout tags/v2.4.1_beta3`
 5. Init WG-Maply submodules. This initialises WG-Maply's internal dependencies: `$ git submodule update --init --recursive`
-6. Open Xcode and build the `MaplyAdater` framework. This will also build WG-Maply implicitly.
+6. Open Xcode and build the `MaplyAdapter` framework. This will also build WG-Maply implicitly.
 
 ### Integration with your Xcode project:
 
-1. Bring in the MaplyAdapter framework
-2. Add MaplyAdapter and OSTransformation to 'link binary with libriaries' in xcode
-3. Create embed frameworks build phase and add MaplyAdapter and OSTransformation to that.
-4. Add Maply to your header search paths, something like:
+1. Import the `MaplyAdapter` framework to your project.
+2. Add `MaplyAdapter` and `OSTransformation` to 'link binary with libriaries' in xcode
+3. Create embed frameworks build phase and add `MaplyAdapter` and `OSTransformation` to that.
+4. Add Maply to your header search paths, e.g.:
 `"$(SRCROOT)/../Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include"`
 5. `@import MaplyAdapter;` in your view controller
 6. Add `#import "MaplyComponent.h"` to your view controller
@@ -61,7 +61,7 @@ Steps to do this are outlined below:
 	* `libxml2`
 	* `libsqlite3`
 
-11. Create the tile layer at the end of viewDidLoad: like so:
+11. Create the tile layer at the end of `viewDidLoad:` like so:
 
     ```
     MaplyQuadImageTilesLayer *tileLayer = [OSTileSourceFactory create27700TileLayer];
@@ -76,7 +76,7 @@ Steps to do this are outlined below:
     ```
 
 
-13. Place APIKEY file in project root and include in bundle.
+13. Place `APIKEY` file (containing your OS Maps API key) in the project root and include in your app bundle.
 14. Run your app. If everything is configured correctly, you will see something similar to the below screenshot:
 
 ![Map Screenshot](images/map.png)
