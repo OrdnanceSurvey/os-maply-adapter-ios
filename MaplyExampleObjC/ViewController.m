@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 @import MaplyAdapter;
-#import "MaplyComponent.h"
 
 @interface ViewController ()<MaplyViewControllerDelegate>
 
