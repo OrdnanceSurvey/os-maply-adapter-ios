@@ -12,11 +12,8 @@ Steps to do this are outlined below:
 
 1. Clone this repo
 2. Carthage update (this brings in OSTransformation framework): `$ carthage update --platform iOS --no-use-binaries `
-3. Submodule init (this brings in WG-Maply): `$ git submodule update --init`
-4. `$ cd Submodules`, which now contains the WG-Maply repo.
-4. Checkout maply tag v2.4.1_beta3 (current version the framework supports): `$ git checkout tags/v2.4.1_beta3`
-5. Init WG-Maply submodules. This initialises WG-Maply's internal dependencies: `$ git submodule update --init --recursive`
-6. Open Xcode and build the `MaplyAdapter` framework. This will also build WG-Maply implicitly.
+3. Submodule init (this brings in WG-Maply): `$ git submodule update --init --recursive`
+4. Open Xcode and build the `MaplyAdapter` framework. This will also build WG-Maply implicitly.
 
 ### Integration with your Xcode project:
 
