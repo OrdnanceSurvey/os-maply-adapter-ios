@@ -39,9 +39,9 @@
     [self.maplyViewController addScreenMarkers:@[ marker ] desc:nil mode:MaplyThreadAny];
 
     // Set initial map position to the centre of GB
-    MaplyCoordinate centreOfGB = MaplyCoordinateMakeWithDegrees(54.83, -2.42);
+    MaplyCoordinate centreOfGB = MaplyCoordinateMake(-0.049939, 0.964304);
     MaplyCoordinate centreOfGBLocal = [self.maplyViewController.coordSys geoToLocal:centreOfGB];
-    [self.maplyViewController setPosition:centreOfGBLocal height:1.2];
+    [self.maplyViewController setPosition:centreOfGBLocal height:1.839962];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,6 +63,13 @@
     [self.view addSubview:self.maplyViewController.view];
     [self.view sendSubviewToBack:self.maplyViewController.view];
     [self addChildViewController:self.maplyViewController];
+}
+
+- (void)maplyViewController:(MaplyViewController *)viewC didTapAt:(MaplyCoordinate)coord {
+    MaplyCoordinate centre;
+    float height;
+    [self.maplyViewController getPosition:&centre height:&height];
+    NSLog(@"%f, %f height: %f", centre.x, centre.y, height);
 }
 
 @end
