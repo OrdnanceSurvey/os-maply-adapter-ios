@@ -1,6 +1,9 @@
 machine:
   xcode:
     version: "7.2"
+dependencies:
+  override:
+   - bundle install --path=vendor/bundle
 test:
   override:
     - carthage update --platform iOS --no-use-binaries
