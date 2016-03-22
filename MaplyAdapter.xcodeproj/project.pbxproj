@@ -17,15 +17,12 @@
 		3DC344B11C9C2EB6003D7F09 /* OSRemoteTileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */; };
 		3DC344B21C9C2EB6003D7F09 /* OSTileSourceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344B31C9C2EB6003D7F09 /* OSTileSourceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */; };
-		3DC344B61C9C3DEE003D7F09 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; };
 		3DC344C51C9C546E003D7F09 /* libWhirlyGlobe-MaplyComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C01C9C515E003D7F09 /* libWhirlyGlobe-MaplyComponent.a */; };
 		3DC344C71C9C5482003D7F09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C61C9C5482003D7F09 /* CoreLocation.framework */; };
 		3DC344C91C9C5490003D7F09 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C81C9C5490003D7F09 /* libsqlite3.tbd */; };
 		3DC344CB1C9C549D003D7F09 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CA1C9C549D003D7F09 /* libxml2.tbd */; };
 		3DC344CD1C9C54A9003D7F09 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CC1C9C54A9003D7F09 /* libc++.tbd */; };
 		3DC344CF1C9C54B6003D7F09 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CE1C9C54B6003D7F09 /* libz.tbd */; };
-		3DC344DA1C9DEAAD003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3DC344DB1C9DEAAF003D7F09 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; };
 		3DC344E21C9DF2CF003D7F09 /* OSBNGUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E11C9DF2CF003D7F09 /* OSBNGUtilsTests.m */; };
 		3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344E31C9DF5BB003D7F09 /* Expecta.framework */; };
 		3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344E31C9DF5BB003D7F09 /* Expecta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -40,14 +37,16 @@
 		3DC345021C9E1076003D7F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC345001C9E1076003D7F09 /* LaunchScreen.storyboard */; };
 		3DC345091C9E12E4003D7F09 /* MaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; };
 		3DC3450B1C9E1332003D7F09 /* MaplyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3DC3450C1C9E13EB003D7F09 /* OSGridPointConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; };
-		3DC3450D1C9E13F1003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DC3450E1C9E166C003D7F09 /* libWhirlyGlobe-MaplyComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C01C9C515E003D7F09 /* libWhirlyGlobe-MaplyComponent.a */; };
 		3DC3450F1C9E1673003D7F09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C61C9C5482003D7F09 /* CoreLocation.framework */; };
 		3DC345101C9E1689003D7F09 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CE1C9C54B6003D7F09 /* libz.tbd */; };
 		3DC345111C9E1691003D7F09 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CC1C9C54A9003D7F09 /* libc++.tbd */; };
 		3DC345121C9E169E003D7F09 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CA1C9C549D003D7F09 /* libxml2.tbd */; };
 		3DC345141C9E1787003D7F09 /* APIKEY in Resources */ = {isa = PBXBuildFile; fileRef = 3DC345131C9E1787003D7F09 /* APIKEY */; };
+		3DC345281CA15B80003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
+		3DC345291CA15B87003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
+		3DC3452A1CA15B89003D7F09 /* OSTransformation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DC3452C1CA16381003D7F09 /* OSTransformation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +88,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */,
-				3DC344DA1C9DEAAD003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */,
+				3DC3452C1CA16381003D7F09 /* OSTransformation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +100,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3DC3450B1C9E1332003D7F09 /* MaplyAdapter.framework in Embed Frameworks */,
-				3DC3450D1C9E13F1003D7F09 /* OSGridPointConversion.framework in Embed Frameworks */,
+				3DC3452A1CA15B89003D7F09 /* OSTransformation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +121,6 @@
 		3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRemoteTileInfo.m; sourceTree = "<group>"; };
 		3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTileSourceFactory.h; sourceTree = "<group>"; };
 		3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTileSourceFactory.m; sourceTree = "<group>"; };
-		3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSGridPointConversion.framework; path = Carthage/Build/iOS/OSGridPointConversion.framework; sourceTree = SOURCE_ROOT; };
 		3DC344BA1C9C515E003D7F09 /* WhirlyGlobe-MaplyComponent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "WhirlyGlobe-MaplyComponent.xcodeproj"; path = "Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/WhirlyGlobe-MaplyComponent.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		3DC344C61C9C5482003D7F09 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3DC344C81C9C5490003D7F09 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -145,6 +143,7 @@
 		3DC345011C9E1076003D7F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC345031C9E1076003D7F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC345131C9E1787003D7F09 /* APIKEY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APIKEY; sourceTree = SOURCE_ROOT; };
+		3DC345271CA15B80003D7F09 /* OSTransformation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSTransformation.framework; path = Carthage/Build/iOS/OSTransformation.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +157,7 @@
 				3DC344C91C9C5490003D7F09 /* libsqlite3.tbd in Frameworks */,
 				3DC344C71C9C5482003D7F09 /* CoreLocation.framework in Frameworks */,
 				3DC344C51C9C546E003D7F09 /* libWhirlyGlobe-MaplyComponent.a in Frameworks */,
-				3DC344B61C9C3DEE003D7F09 /* OSGridPointConversion.framework in Frameworks */,
+				3DC345281CA15B80003D7F09 /* OSTransformation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +167,6 @@
 			files = (
 				3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */,
 				3DC344931C9C2A1F003D7F09 /* MaplyAdapter.framework in Frameworks */,
-				3DC344DB1C9DEAAF003D7F09 /* OSGridPointConversion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,9 +177,9 @@
 				3DC345121C9E169E003D7F09 /* libxml2.tbd in Frameworks */,
 				3DC345111C9E1691003D7F09 /* libc++.tbd in Frameworks */,
 				3DC345101C9E1689003D7F09 /* libz.tbd in Frameworks */,
+				3DC345291CA15B87003D7F09 /* OSTransformation.framework in Frameworks */,
 				3DC3450F1C9E1673003D7F09 /* CoreLocation.framework in Frameworks */,
 				3DC345091C9E12E4003D7F09 /* MaplyAdapter.framework in Frameworks */,
-				3DC3450C1C9E13EB003D7F09 /* OSGridPointConversion.framework in Frameworks */,
 				3DC3450E1C9E166C003D7F09 /* libWhirlyGlobe-MaplyComponent.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,12 +250,12 @@
 		3DC344D01C9C54D4003D7F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3DC345271CA15B80003D7F09 /* OSTransformation.framework */,
 				3DC344C61C9C5482003D7F09 /* CoreLocation.framework */,
 				3DC344CE1C9C54B6003D7F09 /* libz.tbd */,
 				3DC344CC1C9C54A9003D7F09 /* libc++.tbd */,
 				3DC344CA1C9C549D003D7F09 /* libxml2.tbd */,
 				3DC344C81C9C5490003D7F09 /* libsqlite3.tbd */,
-				3DC344B51C9C3DEE003D7F09 /* OSGridPointConversion.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -621,7 +619,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -644,7 +642,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -662,7 +660,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyAdapterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapterTests;
@@ -680,7 +678,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyAdapterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapterTests;
@@ -697,7 +695,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyExampleObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyExampleObjC;
@@ -713,7 +711,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../WhirlyGlobe/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
 				INFOPLIST_FILE = MaplyExampleObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyExampleObjC;
@@ -758,6 +756,7 @@
 				3DC345061C9E1076003D7F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

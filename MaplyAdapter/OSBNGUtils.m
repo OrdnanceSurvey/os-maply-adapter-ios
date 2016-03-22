@@ -7,7 +7,7 @@
 //
 
 #import "OSBNGUtils.h"
-@import OSGridPointConversion;
+@import OSTransformation;
 #import "MaplyComponent.h"
 
 @implementation OSBNGUtils
