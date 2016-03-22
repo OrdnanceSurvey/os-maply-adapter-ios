@@ -46,6 +46,7 @@
 		3DC345281CA15B80003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
 		3DC345291CA15B87003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
 		3DC3452A1CA15B89003D7F09 /* OSTransformation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DC3452C1CA16381003D7F09 /* OSTransformation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */,
+				3DC3452C1CA16381003D7F09 /* OSTransformation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
