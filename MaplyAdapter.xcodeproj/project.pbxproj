@@ -19,10 +19,6 @@
 		3DC344B31C9C2EB6003D7F09 /* OSTileSourceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */; };
 		3DC344C51C9C546E003D7F09 /* libWhirlyGlobe-MaplyComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C01C9C515E003D7F09 /* libWhirlyGlobe-MaplyComponent.a */; };
 		3DC344C71C9C5482003D7F09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C61C9C5482003D7F09 /* CoreLocation.framework */; };
-		3DC344C91C9C5490003D7F09 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344C81C9C5490003D7F09 /* libsqlite3.tbd */; };
-		3DC344CB1C9C549D003D7F09 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CA1C9C549D003D7F09 /* libxml2.tbd */; };
-		3DC344CD1C9C54A9003D7F09 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CC1C9C54A9003D7F09 /* libc++.tbd */; };
-		3DC344CF1C9C54B6003D7F09 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344CE1C9C54B6003D7F09 /* libz.tbd */; };
 		3DC344E21C9DF2CF003D7F09 /* OSBNGUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E11C9DF2CF003D7F09 /* OSBNGUtilsTests.m */; };
 		3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344E31C9DF5BB003D7F09 /* Expecta.framework */; };
 		3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344E31C9DF5BB003D7F09 /* Expecta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -294,6 +290,15 @@
 		3DC3472F1CA19CC2003D7F09 /* WhirlyVector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC346B31CA19C64003D7F09 /* WhirlyVector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC347301CA19CC4003D7F09 /* WideVectorDrawable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC346B41CA19C64003D7F09 /* WideVectorDrawable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC347311CA19CC5003D7F09 /* WideVectorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC346B51CA19C64003D7F09 /* WideVectorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC3473B1CA1DE3D003D7F09 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC3473A1CA1DE3D003D7F09 /* libsqlite3.dylib */; };
+		3DC3473D1CA1DE52003D7F09 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC3473C1CA1DE52003D7F09 /* libz.1.dylib */; };
+		3DC3473F1CA1DE6A003D7F09 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC3473E1CA1DE6A003D7F09 /* libc++.1.dylib */; };
+		3DC347411CA1DE7B003D7F09 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC347401CA1DE7B003D7F09 /* libxml2.2.dylib */; };
+		3DC347421CA1E0BA003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
+		3DC347431CA1E0E4003D7F09 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC347401CA1DE7B003D7F09 /* libxml2.2.dylib */; };
+		3DC347441CA1E0E6003D7F09 /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC3473E1CA1DE6A003D7F09 /* libc++.1.dylib */; };
+		3DC347451CA1E0E8003D7F09 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC3473C1CA1DE52003D7F09 /* libz.1.dylib */; };
+		3DC347461CA1E0EB003D7F09 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC3473A1CA1DE3D003D7F09 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -639,6 +644,10 @@
 		3DC346B31CA19C64003D7F09 /* WhirlyVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WhirlyVector.h; path = Submodules/WhirlyGlobeSrc/WhirlyGlobeLib/include/WhirlyVector.h; sourceTree = "<group>"; };
 		3DC346B41CA19C64003D7F09 /* WideVectorDrawable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WideVectorDrawable.h; path = Submodules/WhirlyGlobeSrc/WhirlyGlobeLib/include/WideVectorDrawable.h; sourceTree = "<group>"; };
 		3DC346B51CA19C64003D7F09 /* WideVectorManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WideVectorManager.h; path = Submodules/WhirlyGlobeSrc/WhirlyGlobeLib/include/WideVectorManager.h; sourceTree = "<group>"; };
+		3DC3473A1CA1DE3D003D7F09 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
+		3DC3473C1CA1DE52003D7F09 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
+		3DC3473E1CA1DE6A003D7F09 /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "/usr/lib/libc++.1.dylib"; sourceTree = "<absolute>"; };
+		3DC347401CA1DE7B003D7F09 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = /usr/lib/libxml2.2.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -646,10 +655,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC344CF1C9C54B6003D7F09 /* libz.tbd in Frameworks */,
-				3DC344CD1C9C54A9003D7F09 /* libc++.tbd in Frameworks */,
-				3DC344CB1C9C549D003D7F09 /* libxml2.tbd in Frameworks */,
-				3DC344C91C9C5490003D7F09 /* libsqlite3.tbd in Frameworks */,
+				3DC347411CA1DE7B003D7F09 /* libxml2.2.dylib in Frameworks */,
+				3DC3473F1CA1DE6A003D7F09 /* libc++.1.dylib in Frameworks */,
+				3DC3473D1CA1DE52003D7F09 /* libz.1.dylib in Frameworks */,
+				3DC3473B1CA1DE3D003D7F09 /* libsqlite3.dylib in Frameworks */,
 				3DC344C71C9C5482003D7F09 /* CoreLocation.framework in Frameworks */,
 				3DC344C51C9C546E003D7F09 /* libWhirlyGlobe-MaplyComponent.a in Frameworks */,
 				3DC345281CA15B80003D7F09 /* OSTransformation.framework in Frameworks */,
@@ -662,6 +671,11 @@
 			files = (
 				3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */,
 				3DC344931C9C2A1F003D7F09 /* MaplyAdapter.framework in Frameworks */,
+				3DC347421CA1E0BA003D7F09 /* OSTransformation.framework in Frameworks */,
+				3DC347431CA1E0E4003D7F09 /* libxml2.2.dylib in Frameworks */,
+				3DC347441CA1E0E6003D7F09 /* libc++.1.dylib in Frameworks */,
+				3DC347451CA1E0E8003D7F09 /* libz.1.dylib in Frameworks */,
+				3DC347461CA1E0EB003D7F09 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +766,10 @@
 				3DC344CC1C9C54A9003D7F09 /* libc++.tbd */,
 				3DC344CA1C9C549D003D7F09 /* libxml2.tbd */,
 				3DC344C81C9C5490003D7F09 /* libsqlite3.tbd */,
+				3DC347401CA1DE7B003D7F09 /* libxml2.2.dylib */,
+				3DC3473E1CA1DE6A003D7F09 /* libc++.1.dylib */,
+				3DC3473C1CA1DE52003D7F09 /* libz.1.dylib */,
+				3DC3473A1CA1DE3D003D7F09 /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1623,6 +1641,7 @@
 				INFOPLIST_FILE = MaplyAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1647,6 +1666,7 @@
 				INFOPLIST_FILE = MaplyAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
