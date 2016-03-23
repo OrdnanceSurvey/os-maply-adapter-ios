@@ -1,6 +1,7 @@
 coverage_service: coveralls
 ci_service: circleci
 xcodeproj: MaplyAdapter.xcodeproj
+source_directory: MaplyAdapter/
 ignore:
   - Carthage/*
   - MaplyExampleSwift/*
