@@ -20,7 +20,7 @@
         [NSURLQueryItem queryItemWithName:@"height" value:@"256"],
         [NSURLQueryItem queryItemWithName:@"width" value:@"256"],
         [NSURLQueryItem queryItemWithName:@"tilematrixSet"
-                                    value:        [srs stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]],
+                                    value:[srs stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]],
         [NSURLQueryItem queryItemWithName:@"version" value:@"1.0.0"],
         [NSURLQueryItem queryItemWithName:@"style" value:@""],
         [NSURLQueryItem queryItemWithName:@"layer"

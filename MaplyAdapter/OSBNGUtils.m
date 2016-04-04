@@ -40,13 +40,13 @@
     // We need to figure out what the real world bounding box of the lowest level (and all the others)
     // would be if each tile set were a power of two.
     // Formulas courtesy: https://gist.github.com/atlefren/c41921d64a2636c9598e
-    double StandardizedRenderingPixelSize = 0.00028; // A constant having to do with assumed resolution
-    int TileWidth = 256, TileHeight = 256; // The number of pixels in individual tiles
-    int MatrixHeight = 8, MatrixWidth = 8; // The number of tiles at level 0 (e.g. level 3) if they were power of 2
-    double ScaleDenom = 3200000.0000000005; // Scale denominator from the Capabilities
+    double standardizedRenderingPixelSize = 0.00028; // A constant having to do with assumed resolution
+    int tileWidth = 256, tileHeight = 256; // The number of pixels in individual tiles
+    int matrixHeight = 8, matrixWidth = 8; // The number of tiles at level 0 (e.g. level 3) if they were power of 2
+    double scaleDenom = 3200000.0000000005; // Scale denominator from the Capabilities
     double leftRW = -238375.0, topRW = 1376256.0; // Upper left corner from the Capabilities
-    double rightRW = ScaleDenom * (TileWidth * MatrixWidth) * StandardizedRenderingPixelSize + leftRW;
-    double bottomRW = topRW - ScaleDenom * (TileHeight * MatrixHeight) * StandardizedRenderingPixelSize;
+    double rightRW = scaleDenom * (tileWidth * matrixWidth) * standardizedRenderingPixelSize + leftRW;
+    double bottomRW = topRW - scaleDenom * (tileHeight * matrixHeight) * standardizedRenderingPixelSize;
 
     // Set the bounding box for validity.  It assumes it can go everywhere by default
     MaplyBoundingBox bbox;
