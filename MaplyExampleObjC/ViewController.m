@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+@import WhirlyGlobeMaply;
 @import MaplyAdapter;
 
 @interface ViewController ()<MaplyViewControllerDelegate>

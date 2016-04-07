@@ -8,7 +8,7 @@
 
 #import "OSBNGUtils.h"
 @import OSTransformation;
-#import "MaplyComponent.h"
+@import WhirlyGlobeMaply;
 
 @implementation OSBNGUtils
 

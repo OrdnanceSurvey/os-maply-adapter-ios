@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MaplyRemoteTileSource.h"
+@import WhirlyGlobeMaply;
 
 /**
  *  Maply remote tile info subclass - required for translating tile requests
