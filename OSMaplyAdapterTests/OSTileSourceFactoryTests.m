@@ -7,9 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-@import MaplyAdapter;
+@import OSMaplyAdapter;
+@import WhirlyGlobeMaply;
 @import Expecta;
-#import "MaplyComponent.h"
 
 @interface OSTileSourceFactoryTests : XCTestCase
 
@@ -32,6 +32,5 @@
     expect(testLayer.drawPriority).to.equal(kMaplyImageLayerDrawPriorityDefault);
     expect(testLayer.tileSource).toNot.beNil();
 }
-
 
 @end

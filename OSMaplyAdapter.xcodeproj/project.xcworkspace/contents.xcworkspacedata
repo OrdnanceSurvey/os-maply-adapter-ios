@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MaplyAdapter.xcodeproj">
+      location = "self:/Users/dhardiman/Projects/os-maply-adapter-ios/OSMaplyAdapter.xcodeproj">
    </FileRef>
 </Workspace>

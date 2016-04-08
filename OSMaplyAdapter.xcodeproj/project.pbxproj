@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DC3448C1C9C2A1F003D7F09 /* MaplyAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC3448B1C9C2A1F003D7F09 /* MaplyAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DC344931C9C2A1F003D7F09 /* MaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; };
+		3DC3448C1C9C2A1F003D7F09 /* OSMaplyAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC3448B1C9C2A1F003D7F09 /* OSMaplyAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC344931C9C2A1F003D7F09 /* OSMaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* OSMaplyAdapter.framework */; };
 		3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344AD1C9C2EB6003D7F09 /* OSBNGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */; };
 		3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A61C9C2EB6003D7F09 /* OSMapsAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,8 +29,8 @@
 		3DC344FD1C9E1076003D7F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC344FB1C9E1076003D7F09 /* Main.storyboard */; };
 		3DC344FF1C9E1076003D7F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC344FE1C9E1076003D7F09 /* Assets.xcassets */; };
 		3DC345021C9E1076003D7F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC345001C9E1076003D7F09 /* LaunchScreen.storyboard */; };
-		3DC345091C9E12E4003D7F09 /* MaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; };
-		3DC3450B1C9E1332003D7F09 /* MaplyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DC345091C9E12E4003D7F09 /* OSMaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* OSMaplyAdapter.framework */; };
+		3DC3450B1C9E1332003D7F09 /* OSMaplyAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* OSMaplyAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DC345141C9E1787003D7F09 /* APIKEY in Resources */ = {isa = PBXBuildFile; fileRef = 3DC345131C9E1787003D7F09 /* APIKEY */; };
 		3DC345281CA15B80003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
 		3DC345291CA15B87003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
@@ -80,7 +80,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3DC3450B1C9E1332003D7F09 /* MaplyAdapter.framework in Embed Frameworks */,
+				3DC3450B1C9E1332003D7F09 /* OSMaplyAdapter.framework in Embed Frameworks */,
 				3DC3452A1CA15B89003D7F09 /* OSTransformation.framework in Embed Frameworks */,
 				4577746A1CB6914F00F7B3E8 /* WhirlyGlobeMaply.framework in Embed Frameworks */,
 			);
@@ -90,10 +90,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaplyAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DC3448B1C9C2A1F003D7F09 /* MaplyAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaplyAdapter.h; sourceTree = "<group>"; };
+		3DC344881C9C2A1F003D7F09 /* OSMaplyAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSMaplyAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC3448B1C9C2A1F003D7F09 /* OSMaplyAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSMaplyAdapter.h; sourceTree = "<group>"; };
 		3DC3448D1C9C2A1F003D7F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DC344921C9C2A1F003D7F09 /* MaplyAdapterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaplyAdapterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC344921C9C2A1F003D7F09 /* OSMaplyAdapterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSMaplyAdapterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC344991C9C2A1F003D7F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSBNGUtils.h; sourceTree = "<group>"; };
 		3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSBNGUtils.m; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 			files = (
 				3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */,
 				4577746B1CB6937000F7B3E8 /* WhirlyGlobeMaply.framework in Frameworks */,
-				3DC344931C9C2A1F003D7F09 /* MaplyAdapter.framework in Frameworks */,
+				3DC344931C9C2A1F003D7F09 /* OSMaplyAdapter.framework in Frameworks */,
 				3DC347421CA1E0BA003D7F09 /* OSTransformation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DC345291CA15B87003D7F09 /* OSTransformation.framework in Frameworks */,
-				3DC345091C9E12E4003D7F09 /* MaplyAdapter.framework in Frameworks */,
+				3DC345091C9E12E4003D7F09 /* OSMaplyAdapter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,8 +159,8 @@
 		3DC3447E1C9C2A1F003D7F09 = {
 			isa = PBXGroup;
 			children = (
-				3DC3448A1C9C2A1F003D7F09 /* MaplyAdapter */,
-				3DC344961C9C2A1F003D7F09 /* MaplyAdapterTests */,
+				3DC3448A1C9C2A1F003D7F09 /* OSMaplyAdapter */,
+				3DC344961C9C2A1F003D7F09 /* OSMaplyAdapterTests */,
 				3DC344F11C9E1076003D7F09 /* MaplyExampleObjC */,
 				3DC344891C9C2A1F003D7F09 /* Products */,
 			);
@@ -169,17 +169,17 @@
 		3DC344891C9C2A1F003D7F09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */,
-				3DC344921C9C2A1F003D7F09 /* MaplyAdapterTests.xctest */,
+				3DC344881C9C2A1F003D7F09 /* OSMaplyAdapter.framework */,
+				3DC344921C9C2A1F003D7F09 /* OSMaplyAdapterTests.xctest */,
 				3DC344F01C9E1076003D7F09 /* MaplyExampleObjC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3DC3448A1C9C2A1F003D7F09 /* MaplyAdapter */ = {
+		3DC3448A1C9C2A1F003D7F09 /* OSMaplyAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				3DC3448B1C9C2A1F003D7F09 /* MaplyAdapter.h */,
+				3DC3448B1C9C2A1F003D7F09 /* OSMaplyAdapter.h */,
 				3DC344D01C9C54D4003D7F09 /* Frameworks */,
 				3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */,
 				3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */,
@@ -191,10 +191,10 @@
 				3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */,
 				3DC3448D1C9C2A1F003D7F09 /* Info.plist */,
 			);
-			path = MaplyAdapter;
+			path = OSMaplyAdapter;
 			sourceTree = "<group>";
 		};
-		3DC344961C9C2A1F003D7F09 /* MaplyAdapterTests */ = {
+		3DC344961C9C2A1F003D7F09 /* OSMaplyAdapterTests */ = {
 			isa = PBXGroup;
 			children = (
 				3DC344E11C9DF2CF003D7F09 /* OSBNGUtilsTests.m */,
@@ -204,7 +204,7 @@
 				3DC344991C9C2A1F003D7F09 /* Info.plist */,
 				3DC344E31C9DF5BB003D7F09 /* Expecta.framework */,
 			);
-			path = MaplyAdapterTests;
+			path = OSMaplyAdapterTests;
 			sourceTree = "<group>";
 		};
 		3DC344D01C9C54D4003D7F09 /* Frameworks */ = {
@@ -251,7 +251,7 @@
 				3DC344B21C9C2EB6003D7F09 /* OSTileSourceFactory.h in Headers */,
 				3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */,
 				3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */,
-				3DC3448C1C9C2A1F003D7F09 /* MaplyAdapter.h in Headers */,
+				3DC3448C1C9C2A1F003D7F09 /* OSMaplyAdapter.h in Headers */,
 				3DC344B01C9C2EB6003D7F09 /* OSRemoteTileInfo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +259,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3DC344871C9C2A1F003D7F09 /* MaplyAdapter */ = {
+		3DC344871C9C2A1F003D7F09 /* OSMaplyAdapter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DC3449C1C9C2A1F003D7F09 /* Build configuration list for PBXNativeTarget "MaplyAdapter" */;
+			buildConfigurationList = 3DC3449C1C9C2A1F003D7F09 /* Build configuration list for PBXNativeTarget "OSMaplyAdapter" */;
 			buildPhases = (
 				3DC344831C9C2A1F003D7F09 /* Sources */,
 				3DC344841C9C2A1F003D7F09 /* Frameworks */,
@@ -272,14 +272,14 @@
 			);
 			dependencies = (
 			);
-			name = MaplyAdapter;
+			name = OSMaplyAdapter;
 			productName = MaplyAdapter;
-			productReference = 3DC344881C9C2A1F003D7F09 /* MaplyAdapter.framework */;
+			productReference = 3DC344881C9C2A1F003D7F09 /* OSMaplyAdapter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3DC344911C9C2A1F003D7F09 /* MaplyAdapterTests */ = {
+		3DC344911C9C2A1F003D7F09 /* OSMaplyAdapterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DC3449F1C9C2A1F003D7F09 /* Build configuration list for PBXNativeTarget "MaplyAdapterTests" */;
+			buildConfigurationList = 3DC3449F1C9C2A1F003D7F09 /* Build configuration list for PBXNativeTarget "OSMaplyAdapterTests" */;
 			buildPhases = (
 				3DC3448E1C9C2A1F003D7F09 /* Sources */,
 				3DC3448F1C9C2A1F003D7F09 /* Frameworks */,
@@ -291,9 +291,9 @@
 			dependencies = (
 				3DC344951C9C2A1F003D7F09 /* PBXTargetDependency */,
 			);
-			name = MaplyAdapterTests;
+			name = OSMaplyAdapterTests;
 			productName = MaplyAdapterTests;
-			productReference = 3DC344921C9C2A1F003D7F09 /* MaplyAdapterTests.xctest */;
+			productReference = 3DC344921C9C2A1F003D7F09 /* OSMaplyAdapterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3DC344EF1C9E1076003D7F09 /* MaplyExampleObjC */ = {
@@ -336,7 +336,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3DC344821C9C2A1F003D7F09 /* Build configuration list for PBXProject "MaplyAdapter" */;
+			buildConfigurationList = 3DC344821C9C2A1F003D7F09 /* Build configuration list for PBXProject "OSMaplyAdapter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -349,8 +349,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3DC344871C9C2A1F003D7F09 /* MaplyAdapter */,
-				3DC344911C9C2A1F003D7F09 /* MaplyAdapterTests */,
+				3DC344871C9C2A1F003D7F09 /* OSMaplyAdapter */,
+				3DC344911C9C2A1F003D7F09 /* OSMaplyAdapterTests */,
 				3DC344EF1C9E1076003D7F09 /* MaplyExampleObjC */,
 			);
 		};
@@ -422,12 +422,12 @@
 /* Begin PBXTargetDependency section */
 		3DC344951C9C2A1F003D7F09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3DC344871C9C2A1F003D7F09 /* MaplyAdapter */;
+			target = 3DC344871C9C2A1F003D7F09 /* OSMaplyAdapter */;
 			targetProxy = 3DC344941C9C2A1F003D7F09 /* PBXContainerItemProxy */;
 		};
 		3DC345081C9E1218003D7F09 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3DC344871C9C2A1F003D7F09 /* MaplyAdapter */;
+			target = 3DC344871C9C2A1F003D7F09 /* OSMaplyAdapter */;
 			targetProxy = 3DC345071C9E1218003D7F09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -554,12 +554,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
-				INFOPLIST_FILE = MaplyAdapter/Info.plist;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = OSMaplyAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapter;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.os.OSMaplyAdapter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -579,12 +579,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
-				INFOPLIST_FILE = MaplyAdapter/Info.plist;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = OSMaplyAdapter/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapter;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.os.OSMaplyAdapter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -598,12 +598,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
-				INFOPLIST_FILE = MaplyAdapterTests/Info.plist;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = OSMaplyAdapterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.os.OSMaplyAdapterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MaplyAdapterTests/MaplyAdapterTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSMaplyAdapterTests/MaplyAdapterTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -616,12 +616,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Submodules/WhirlyGlobeSrc/WhirlyGlobe-MaplyComponent/include\"";
-				INFOPLIST_FILE = MaplyAdapterTests/Info.plist;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = OSMaplyAdapterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.os.MaplyAdapterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.os.OSMaplyAdapterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MaplyAdapterTests/MaplyAdapterTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSMaplyAdapterTests/MaplyAdapterTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -662,7 +662,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3DC344821C9C2A1F003D7F09 /* Build configuration list for PBXProject "MaplyAdapter" */ = {
+		3DC344821C9C2A1F003D7F09 /* Build configuration list for PBXProject "OSMaplyAdapter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DC3449A1C9C2A1F003D7F09 /* Debug */,
@@ -671,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DC3449C1C9C2A1F003D7F09 /* Build configuration list for PBXNativeTarget "MaplyAdapter" */ = {
+		3DC3449C1C9C2A1F003D7F09 /* Build configuration list for PBXNativeTarget "OSMaplyAdapter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DC3449D1C9C2A1F003D7F09 /* Debug */,
@@ -680,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DC3449F1C9C2A1F003D7F09 /* Build configuration list for PBXNativeTarget "MaplyAdapterTests" */ = {
+		3DC3449F1C9C2A1F003D7F09 /* Build configuration list for PBXNativeTarget "OSMaplyAdapterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DC344A01C9C2A1F003D7F09 /* Debug */,

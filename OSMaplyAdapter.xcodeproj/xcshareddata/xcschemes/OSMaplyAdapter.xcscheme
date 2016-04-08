@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DC344EF1C9E1076003D7F09"
-               BuildableName = "MaplyExampleObjC.app"
-               BlueprintName = "MaplyExampleObjC"
-               ReferencedContainer = "container:MaplyAdapter.xcodeproj">
+               BlueprintIdentifier = "3DC344871C9C2A1F003D7F09"
+               BuildableName = "OSMaplyAdapter.framework"
+               BlueprintName = "OSMaplyAdapter"
+               ReferencedContainer = "container:OSMaplyAdapter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,16 +26,27 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3DC344911C9C2A1F003D7F09"
+               BuildableName = "OSMaplyAdapter.xctest"
+               BlueprintName = "OSMaplyAdapterTests"
+               ReferencedContainer = "container:OSMaplyAdapter.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DC344EF1C9E1076003D7F09"
-            BuildableName = "MaplyExampleObjC.app"
-            BlueprintName = "MaplyExampleObjC"
-            ReferencedContainer = "container:MaplyAdapter.xcodeproj">
+            BlueprintIdentifier = "3DC344871C9C2A1F003D7F09"
+            BuildableName = "OSMaplyAdapter.framework"
+            BlueprintName = "OSMaplyAdapter"
+            ReferencedContainer = "container:OSMaplyAdapter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -51,16 +62,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DC344EF1C9E1076003D7F09"
-            BuildableName = "MaplyExampleObjC.app"
-            BlueprintName = "MaplyExampleObjC"
-            ReferencedContainer = "container:MaplyAdapter.xcodeproj">
+            BlueprintIdentifier = "3DC344871C9C2A1F003D7F09"
+            BuildableName = "OSMaplyAdapter.framework"
+            BlueprintName = "OSMaplyAdapter"
+            ReferencedContainer = "container:OSMaplyAdapter.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +80,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DC344EF1C9E1076003D7F09"
-            BuildableName = "MaplyExampleObjC.app"
-            BlueprintName = "MaplyExampleObjC"
-            ReferencedContainer = "container:MaplyAdapter.xcodeproj">
+            BlueprintIdentifier = "3DC344871C9C2A1F003D7F09"
+            BuildableName = "OSMaplyAdapter.framework"
+            BlueprintName = "OSMaplyAdapter"
+            ReferencedContainer = "container:OSMaplyAdapter.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

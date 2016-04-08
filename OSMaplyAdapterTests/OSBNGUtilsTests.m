@@ -7,9 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-@import MaplyAdapter;
 @import Expecta;
-#import "MaplyComponent.h"
+@import OSMaplyAdapter;
+@import WhirlyGlobeMaply;
 
 @interface OSBNGUtilsTests : XCTestCase
 
