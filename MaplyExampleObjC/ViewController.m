@@ -14,10 +14,22 @@
 
 @property (nonatomic, strong) MaplyViewController *maplyViewController;
 
-
 @end
 
 @implementation ViewController
+
+- (NSString *)apiKey {
+    NSError *error;
+    NSString *apiKey = [NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"APIKEY"
+                                                                               withExtension:nil]
+                                                encoding:NSUTF8StringEncoding
+                                                   error:&error];
+    if (!apiKey || error) {
+        NSException *exception = [[NSException alloc] initWithName:@"OSAPIKeyMissing" reason:@"Error loading api key. Make sure this is in an APIKEY file in the project bundle." userInfo:nil];
+        [exception raise];
+    }
+    return [apiKey stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +37,7 @@
     // Create map and tile layer
     self.maplyViewController = [self createMaplyViewController];
     [self addMapToViewHierarchy];
-    MaplyQuadImageTilesLayer *tileLayer = [OSTileSourceFactory create27700TileLayer];
+    MaplyQuadImageTilesLayer *tileLayer = [[OSMaplyTilesLayer alloc] initWithBasemapStyle:OSBaseMapStyleRoad spatialReference:OSSpatialReferenceBNG apiKey:self.apiKey];
     [self.maplyViewController addLayer:tileLayer];
 
     // Create test marker
@@ -54,7 +66,7 @@
     maplyViewController.doubleTapZoomGesture = true;
     maplyViewController.twoFingerTapGesture = true;
     maplyViewController.cancelAnimationOnTouch = true;
-    maplyViewController.coordSys = [OSBNGUtils buildBritishNationalGrid];
+    maplyViewController.coordSys = [OSBNGCoordinateSystem britishNationalGrid];
     maplyViewController.delegate = self;
     return maplyViewController;
 }

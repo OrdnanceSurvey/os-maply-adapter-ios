@@ -34,7 +34,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3DC344911C9C2A1F003D7F09"
-               BuildableName = "OSMaplyAdapter.xctest"
+               BuildableName = "OSMaplyAdapterTests.xctest"
                BlueprintName = "OSMaplyAdapterTests"
                ReferencedContainer = "container:OSMaplyAdapter.xcodeproj">
             </BuildableReference>

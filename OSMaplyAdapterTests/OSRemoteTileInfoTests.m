@@ -18,7 +18,7 @@
 @implementation OSRemoteTileInfoTests
 
 - (void)testTheTileInfoSubclassTranslatesRequestsCorrectly {
-    MaplyQuadImageTilesLayer *testLayer = [OSTileSourceFactory create27700TileLayer];
+    MaplyQuadImageTilesLayer *testLayer = [[OSMaplyTilesLayer alloc] initWithBasemapStyle:OSBaseMapStyleRoad spatialReference:OSSpatialReferenceBNG apiKey:@"test"];
     expect(testLayer).toNot.beNil();
 
     // Value for key is used here as OSTileInfo is not a public class in the adapter
@@ -32,7 +32,7 @@
     MaplyTileID testTileID = {50, 50, 10};
     NSURLRequest *testRequest = [testInfo requestForTile:testTileID];
     expect(testRequest).toNot.beNil();
-    expect(testRequest.URL.query).to.equal(@"key=(null)&height=256&width=256&tilematrixSet=EPSG:27700&version=1.0.0&style=&layer=Road%2027700&SERVICE=WMTS&REQUEST=GetTile&format=image/png&TileMatrix=EPSG:27700:7&TileRow=973&TileCol=50");
+    expect(testRequest.URL.query).to.equal(@"key=test&height=256&width=256&tilematrixSet=EPSG:27700&version=1.0.0&style=&layer=Road%2027700&SERVICE=WMTS&REQUEST=GetTile&format=image/png&TileMatrix=EPSG:27700:7&TileRow=973&TileCol=50");
 }
 
 @end

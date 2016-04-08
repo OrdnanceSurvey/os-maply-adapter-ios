@@ -18,7 +18,7 @@
 @implementation OSBNGUtilsTests
 
 - (void)testStandardBNGCoordinateSystemCreation {
-    MaplyCoordinateSystem *coordinateSystem = [OSBNGUtils buildBritishNationalGrid];
+    MaplyCoordinateSystem *coordinateSystem = [OSBNGUtils britishNationalGrid];
     expect(coordinateSystem).toNot.beNil();
     MaplyBoundingBox bounds = [coordinateSystem getBounds];
     expect(bounds.ll.x).to.beCloseToWithin(1393.019653320312, FLT_EPSILON);
@@ -28,7 +28,7 @@
 }
 
 - (void)testTilesourceBNGCoordinateSystemCreation {
-    MaplyCoordinateSystem *coordinateSystem = [OSBNGUtils bngForTileSource];
+    MaplyCoordinateSystem *coordinateSystem = [OSBNGUtils britishNationalGridForTileSource];
     expect(coordinateSystem).toNot.beNil();
     MaplyBoundingBox bounds = [coordinateSystem getBounds];
     expect(bounds.ll.x).to.beCloseToWithin(-238375.0, FLT_EPSILON);

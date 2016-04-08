@@ -14,6 +14,5 @@ FOUNDATION_EXPORT double OSMaplyAdapterVersionNumber;
 //! Project version string for OSMaplyAdapter.
 FOUNDATION_EXPORT const unsigned char OSMaplyAdapterVersionString[];
 
-#import "OSBNGUtils.h"
-#import "OSMapsAPI.h"
-#import "OSTileSourceFactory.h"
+#import "OSBNGCoordinateSystem.h"
+#import "OSMaplyTilesLayer.h"

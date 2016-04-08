@@ -9,17 +9,14 @@
 /* Begin PBXBuildFile section */
 		3DC3448C1C9C2A1F003D7F09 /* OSMaplyAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC3448B1C9C2A1F003D7F09 /* OSMaplyAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DC344931C9C2A1F003D7F09 /* OSMaplyAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344881C9C2A1F003D7F09 /* OSMaplyAdapter.framework */; };
-		3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DC344AD1C9C2EB6003D7F09 /* OSBNGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */; };
-		3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A61C9C2EB6003D7F09 /* OSMapsAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC344AC1C9C2EB6003D7F09 /* OSBNGCoordinateSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A41C9C2EB6003D7F09 /* OSBNGCoordinateSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DC344AD1C9C2EB6003D7F09 /* OSBNGCoordinateSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A51C9C2EB6003D7F09 /* OSBNGCoordinateSystem.m */; };
+		3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A61C9C2EB6003D7F09 /* OSMapsAPI.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3DC344AF1C9C2EB6003D7F09 /* OSMapsAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A71C9C2EB6003D7F09 /* OSMapsAPI.m */; };
 		3DC344B01C9C2EB6003D7F09 /* OSRemoteTileInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344A81C9C2EB6003D7F09 /* OSRemoteTileInfo.h */; };
 		3DC344B11C9C2EB6003D7F09 /* OSRemoteTileInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */; };
-		3DC344B21C9C2EB6003D7F09 /* OSTileSourceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DC344B31C9C2EB6003D7F09 /* OSTileSourceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */; };
 		3DC344E21C9DF2CF003D7F09 /* OSBNGUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E11C9DF2CF003D7F09 /* OSBNGUtilsTests.m */; };
 		3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344E31C9DF5BB003D7F09 /* Expecta.framework */; };
-		3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC344E31C9DF5BB003D7F09 /* Expecta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DC344E71C9DFC14003D7F09 /* OSMapsAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E61C9DFC14003D7F09 /* OSMapsAPITests.m */; };
 		3DC344E91C9E030F003D7F09 /* OSTileSourceFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344E81C9E030F003D7F09 /* OSTileSourceFactoryTests.m */; };
 		3DC344EB1C9E05F5003D7F09 /* OSRemoteTileInfoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC344EA1C9E05F4003D7F09 /* OSRemoteTileInfoTests.m */; };
@@ -35,12 +32,15 @@
 		3DC345281CA15B80003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
 		3DC345291CA15B87003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
 		3DC3452A1CA15B89003D7F09 /* OSTransformation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3DC3452C1CA16381003D7F09 /* OSTransformation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DC347421CA1E0BA003D7F09 /* OSTransformation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC345271CA15B80003D7F09 /* OSTransformation.framework */; };
+		45316CF51CB7C99C002B7126 /* OSMapProducts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 457775CA1CB7B92E00F7B3E8 /* OSMapProducts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		457774681CB6912100F7B3E8 /* WhirlyGlobeMaply.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457774671CB6912100F7B3E8 /* WhirlyGlobeMaply.framework */; };
-		457774691CB6914700F7B3E8 /* WhirlyGlobeMaply.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 457774671CB6912100F7B3E8 /* WhirlyGlobeMaply.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4577746A1CB6914F00F7B3E8 /* WhirlyGlobeMaply.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 457774671CB6912100F7B3E8 /* WhirlyGlobeMaply.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4577746B1CB6937000F7B3E8 /* WhirlyGlobeMaply.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457774671CB6912100F7B3E8 /* WhirlyGlobeMaply.framework */; };
+		457775961CB7B03200F7B3E8 /* OSMaplyTilesLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 457775941CB7B03200F7B3E8 /* OSMaplyTilesLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		457775971CB7B03200F7B3E8 /* OSMaplyTilesLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 457775951CB7B03200F7B3E8 /* OSMaplyTilesLayer.m */; };
+		457775CB1CB7B92E00F7B3E8 /* OSMapProducts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457775CA1CB7B92E00F7B3E8 /* OSMapProducts.framework */; };
+		457775CC1CB7C4FC00F7B3E8 /* OSMapProducts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457775CA1CB7B92E00F7B3E8 /* OSMapProducts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,19 +61,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3DC344B71C9C3F20003D7F09 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				457774691CB6914700F7B3E8 /* WhirlyGlobeMaply.framework in Embed Frameworks */,
-				3DC344E51C9DF5E9003D7F09 /* Expecta.framework in Embed Frameworks */,
-				3DC3452C1CA16381003D7F09 /* OSTransformation.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3DC3450A1C9E1324003D7F09 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +68,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3DC3450B1C9E1332003D7F09 /* OSMaplyAdapter.framework in Embed Frameworks */,
+				45316CF51CB7C99C002B7126 /* OSMapProducts.framework in Embed Frameworks */,
 				3DC3452A1CA15B89003D7F09 /* OSTransformation.framework in Embed Frameworks */,
 				4577746A1CB6914F00F7B3E8 /* WhirlyGlobeMaply.framework in Embed Frameworks */,
 			);
@@ -95,14 +83,12 @@
 		3DC3448D1C9C2A1F003D7F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC344921C9C2A1F003D7F09 /* OSMaplyAdapterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSMaplyAdapterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC344991C9C2A1F003D7F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSBNGUtils.h; sourceTree = "<group>"; };
-		3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSBNGUtils.m; sourceTree = "<group>"; };
+		3DC344A41C9C2EB6003D7F09 /* OSBNGCoordinateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSBNGCoordinateSystem.h; sourceTree = "<group>"; };
+		3DC344A51C9C2EB6003D7F09 /* OSBNGCoordinateSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSBNGCoordinateSystem.m; sourceTree = "<group>"; };
 		3DC344A61C9C2EB6003D7F09 /* OSMapsAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMapsAPI.h; sourceTree = "<group>"; };
 		3DC344A71C9C2EB6003D7F09 /* OSMapsAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMapsAPI.m; sourceTree = "<group>"; };
 		3DC344A81C9C2EB6003D7F09 /* OSRemoteTileInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRemoteTileInfo.h; sourceTree = "<group>"; };
 		3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSRemoteTileInfo.m; sourceTree = "<group>"; };
-		3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSTileSourceFactory.h; sourceTree = "<group>"; };
-		3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSTileSourceFactory.m; sourceTree = "<group>"; };
 		3DC344E11C9DF2CF003D7F09 /* OSBNGUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSBNGUtilsTests.m; sourceTree = "<group>"; };
 		3DC344E31C9DF5BB003D7F09 /* Expecta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Expecta.framework; path = Carthage/Build/iOS/Expecta.framework; sourceTree = SOURCE_ROOT; };
 		3DC344E61C9DFC14003D7F09 /* OSMapsAPITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMapsAPITests.m; sourceTree = "<group>"; };
@@ -121,6 +107,9 @@
 		3DC345131C9E1787003D7F09 /* APIKEY */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APIKEY; sourceTree = SOURCE_ROOT; };
 		3DC345271CA15B80003D7F09 /* OSTransformation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSTransformation.framework; path = Carthage/Build/iOS/OSTransformation.framework; sourceTree = SOURCE_ROOT; };
 		457774671CB6912100F7B3E8 /* WhirlyGlobeMaply.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WhirlyGlobeMaply.framework; path = Carthage/Build/iOS/WhirlyGlobeMaply.framework; sourceTree = SOURCE_ROOT; };
+		457775941CB7B03200F7B3E8 /* OSMaplyTilesLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMaplyTilesLayer.h; sourceTree = "<group>"; };
+		457775951CB7B03200F7B3E8 /* OSMaplyTilesLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMaplyTilesLayer.m; sourceTree = "<group>"; };
+		457775CA1CB7B92E00F7B3E8 /* OSMapProducts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSMapProducts.framework; path = Carthage/Build/iOS/OSMapProducts.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +118,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				457774681CB6912100F7B3E8 /* WhirlyGlobeMaply.framework in Frameworks */,
+				457775CB1CB7B92E00F7B3E8 /* OSMapProducts.framework in Frameworks */,
 				3DC345281CA15B80003D7F09 /* OSTransformation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +129,7 @@
 			files = (
 				3DC344E41C9DF5BB003D7F09 /* Expecta.framework in Frameworks */,
 				4577746B1CB6937000F7B3E8 /* WhirlyGlobeMaply.framework in Frameworks */,
+				457775CC1CB7C4FC00F7B3E8 /* OSMapProducts.framework in Frameworks */,
 				3DC344931C9C2A1F003D7F09 /* OSMaplyAdapter.framework in Frameworks */,
 				3DC347421CA1E0BA003D7F09 /* OSTransformation.framework in Frameworks */,
 			);
@@ -181,15 +172,15 @@
 			children = (
 				3DC3448B1C9C2A1F003D7F09 /* OSMaplyAdapter.h */,
 				3DC344D01C9C54D4003D7F09 /* Frameworks */,
-				3DC344A41C9C2EB6003D7F09 /* OSBNGUtils.h */,
-				3DC344A51C9C2EB6003D7F09 /* OSBNGUtils.m */,
+				3DC344A41C9C2EB6003D7F09 /* OSBNGCoordinateSystem.h */,
+				3DC344A51C9C2EB6003D7F09 /* OSBNGCoordinateSystem.m */,
 				3DC344A61C9C2EB6003D7F09 /* OSMapsAPI.h */,
 				3DC344A71C9C2EB6003D7F09 /* OSMapsAPI.m */,
 				3DC344A81C9C2EB6003D7F09 /* OSRemoteTileInfo.h */,
 				3DC344A91C9C2EB6003D7F09 /* OSRemoteTileInfo.m */,
-				3DC344AA1C9C2EB6003D7F09 /* OSTileSourceFactory.h */,
-				3DC344AB1C9C2EB6003D7F09 /* OSTileSourceFactory.m */,
 				3DC3448D1C9C2A1F003D7F09 /* Info.plist */,
+				457775941CB7B03200F7B3E8 /* OSMaplyTilesLayer.h */,
+				457775951CB7B03200F7B3E8 /* OSMaplyTilesLayer.m */,
 			);
 			path = OSMaplyAdapter;
 			sourceTree = "<group>";
@@ -210,6 +201,7 @@
 		3DC344D01C9C54D4003D7F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				457775CA1CB7B92E00F7B3E8 /* OSMapProducts.framework */,
 				3DC345271CA15B80003D7F09 /* OSTransformation.framework */,
 				457774671CB6912100F7B3E8 /* WhirlyGlobeMaply.framework */,
 			);
@@ -248,9 +240,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC344B21C9C2EB6003D7F09 /* OSTileSourceFactory.h in Headers */,
 				3DC344AE1C9C2EB6003D7F09 /* OSMapsAPI.h in Headers */,
-				3DC344AC1C9C2EB6003D7F09 /* OSBNGUtils.h in Headers */,
+				457775961CB7B03200F7B3E8 /* OSMaplyTilesLayer.h in Headers */,
+				3DC344AC1C9C2EB6003D7F09 /* OSBNGCoordinateSystem.h in Headers */,
 				3DC3448C1C9C2A1F003D7F09 /* OSMaplyAdapter.h in Headers */,
 				3DC344B01C9C2EB6003D7F09 /* OSRemoteTileInfo.h in Headers */,
 			);
@@ -284,7 +276,6 @@
 				3DC3448E1C9C2A1F003D7F09 /* Sources */,
 				3DC3448F1C9C2A1F003D7F09 /* Frameworks */,
 				3DC344901C9C2A1F003D7F09 /* Resources */,
-				3DC344B71C9C3F20003D7F09 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,8 +380,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC344AD1C9C2EB6003D7F09 /* OSBNGUtils.m in Sources */,
-				3DC344B31C9C2EB6003D7F09 /* OSTileSourceFactory.m in Sources */,
+				457775971CB7B03200F7B3E8 /* OSMaplyTilesLayer.m in Sources */,
+				3DC344AD1C9C2EB6003D7F09 /* OSBNGCoordinateSystem.m in Sources */,
 				3DC344B11C9C2EB6003D7F09 /* OSRemoteTileInfo.m in Sources */,
 				3DC344AF1C9C2EB6003D7F09 /* OSMapsAPI.m in Sources */,
 			);
@@ -600,7 +591,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = OSMaplyAdapterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.OSMaplyAdapterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OSMaplyAdapterTests/MaplyAdapterTests-Bridging-Header.h";
@@ -618,7 +609,7 @@
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = OSMaplyAdapterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(SRCROOT)/Carthage/Build/iOS";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.os.OSMaplyAdapterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OSMaplyAdapterTests/MaplyAdapterTests-Bridging-Header.h";

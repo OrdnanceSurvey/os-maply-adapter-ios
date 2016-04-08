@@ -1,3 +1,4 @@
 github "OrdnanceSurvey/WhirlyGlobe" "a5df7ddc31390b955be0383bd3855bf64cb5a59d"
 github "specta/expecta" "v1.0.5"
+github "OrdnanceSurvey/os-mapproducts-ios" "1.0.0"
 github "OrdnanceSurvey/ostransformation-ios" "1.4.0"

@@ -6,11 +6,11 @@
 //  Copyright © 2016 Ordnance Survey. All rights reserved.
 //
 
-#import "OSBNGUtils.h"
+#import "OSBNGCoordinateSystem.h"
 @import OSTransformation;
 @import WhirlyGlobeMaply;
 
-@implementation OSBNGUtils
+@implementation OSBNGCoordinateSystem
 
 + (MaplyProj4CoordSystem *)bngCoordinateSystem {
     NSString *proj4Str = [OSBNGTransformation proj4String];
@@ -21,7 +21,7 @@
 /* Build two different versions of BNG.  One can go out larger than the other.
  If display is set, we'll allow a bigger bounding box.
  */
-+ (MaplyCoordinateSystem *)buildBritishNationalGrid {
++ (MaplyCoordinateSystem *)britishNationalGrid {
     MaplyCoordinateSystem *coordSys = [self bngCoordinateSystem];
     // Set the bounding box for validity.  It assumes it can go everywhere by default.
     MaplyBoundingBox bbox;
@@ -34,7 +34,7 @@
     return coordSys;
 }
 
-+ (MaplyCoordinateSystem *)bngForTileSource {
++ (MaplyCoordinateSystem *)britishNationalGridForTileSource {
     MaplyProj4CoordSystem *coordSys = [self bngCoordinateSystem];
 
     // We need to figure out what the real world bounding box of the lowest level (and all the others)

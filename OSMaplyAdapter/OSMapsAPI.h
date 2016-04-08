@@ -19,6 +19,6 @@
  *
  *  @return The URL template for the service with given configuration.
  */
-+ (NSString *)URLForSRS:(NSString *)srs layer:(NSString *)layer service:(NSString *)service;
++ (NSString *)URLForSRS:(NSString *)srs layer:(NSString *)layer service:(NSString *)service key:(NSString *)apiKey;
 
 @end

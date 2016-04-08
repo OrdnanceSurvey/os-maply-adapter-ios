@@ -11,14 +11,14 @@
 @import WhirlyGlobeMaply;
 @import Expecta;
 
-@interface OSTileSourceFactoryTests : XCTestCase
+@interface OSMaplyTilesLayerTests : XCTestCase
 
 @end
 
-@implementation OSTileSourceFactoryTests
+@implementation OSMaplyTilesLayerTests
 
 - (void)test27700TilesourceCreation {
-    MaplyQuadImageTilesLayer *testLayer = [OSTileSourceFactory create27700TileLayer];
+    MaplyQuadImageTilesLayer *testLayer = [[OSMaplyTilesLayer alloc] initWithBasemapStyle:OSBaseMapStyleRoad spatialReference:OSSpatialReferenceBNG apiKey:@"test"];
     expect(testLayer).toNot.beNil();
     expect(testLayer.coverPoles).to.beFalsy();
     expect(testLayer.drawPriority).to.equal(kMaplyImageLayerDrawPriorityDefault);
@@ -26,7 +26,7 @@
 }
 
 - (void)test3857TilesourceCreation {
-    MaplyQuadImageTilesLayer *testLayer = [OSTileSourceFactory create3857TileLayer];
+    MaplyQuadImageTilesLayer *testLayer = [[OSMaplyTilesLayer alloc] initWithBasemapStyle:OSBaseMapStyleRoad spatialReference:OSSpatialReferenceWebMercator apiKey:@"test"];
     expect(testLayer).toNot.beNil();
     expect(testLayer.coverPoles).to.beFalsy();
     expect(testLayer.drawPriority).to.equal(kMaplyImageLayerDrawPriorityDefault);

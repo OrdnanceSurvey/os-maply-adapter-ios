@@ -10,13 +10,13 @@
 
 @implementation OSMapsAPI
 
-+ (NSString *)URLForSRS:(NSString *)srs layer:(NSString *)layer service:(NSString *)service {
++ (NSString *)URLForSRS:(NSString *)srs layer:(NSString *)layer service:(NSString *)service key:(NSString *)apiKey {
     NSString *baseURL = @"https://api2.ordnancesurvey.co.uk/mapping_api/v1/service";
     baseURL = [baseURL stringByAppendingPathComponent:@"wmts"];
 
     NSArray<NSURLQueryItem *> *query = @[
         [NSURLQueryItem queryItemWithName:@"key"
-                                    value:[self apiKey]],
+                                    value:apiKey],
         [NSURLQueryItem queryItemWithName:@"height" value:@"256"],
         [NSURLQueryItem queryItemWithName:@"width" value:@"256"],
         [NSURLQueryItem queryItemWithName:@"tilematrixSet"
@@ -24,7 +24,7 @@
         [NSURLQueryItem queryItemWithName:@"version" value:@"1.0.0"],
         [NSURLQueryItem queryItemWithName:@"style" value:@""],
         [NSURLQueryItem queryItemWithName:@"layer"
-                                    value:[layer stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]],
+                                    value:layer],
         [NSURLQueryItem queryItemWithName:@"SERVICE" value:@"WMTS"],
         [NSURLQueryItem queryItemWithName:@"REQUEST" value:@"GetTile"],
         [NSURLQueryItem queryItemWithName:@"format" value:@"image/png"],
@@ -45,13 +45,6 @@
     }];
     baseURL = [baseURL stringByAppendingString:queryString];
     return baseURL;
-}
-
-+ (NSString *)apiKey {
-    return [[NSString stringWithContentsOfURL:[NSBundle.mainBundle URLForResource:@"APIKEY" withExtension:nil]
-                                     encoding:NSUTF8StringEncoding
-                                        error:nil] stringByReplacingOccurrencesOfString:@"\n"
-                                                                             withString:@""];
 }
 
 @end

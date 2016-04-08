@@ -1,6 +1,6 @@
 //
-//  OSBNGUtils.h
-//  MaplyAdapter
+//  OSBNGCoordinateSystem.h
+//  OSMaplyAdapter
 //
 //  Created by David Haynes on 12/01/2016.
 //  Copyright © 2016 Ordnance Survey. All rights reserved.
@@ -12,14 +12,14 @@
 /**
  *  Utility methods for working with British National Grid and WhirlyGlobe-Maply
  */
-@interface OSBNGUtils : NSObject
+@interface OSBNGCoordinateSystem : NSObject
 
 /**
  *  Build a standard BNG coordinate system.
  *
  *  @return The BNG coordinate system.
  */
-+ (MaplyCoordinateSystem *)buildBritishNationalGrid;
++ (MaplyCoordinateSystem *)britishNationalGrid;
 
 /**
  *  Builds a BNG coordinate system for use with a WG-Maply tilesource.
@@ -29,6 +29,6 @@
  *
  *  @return The BNG coordinate system initalised as required.
  */
-+ (MaplyCoordinateSystem *)bngForTileSource;
++ (MaplyCoordinateSystem *)britishNationalGridForTileSource;
 
 @end
