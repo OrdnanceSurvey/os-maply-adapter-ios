@@ -72,9 +72,10 @@
 }
 
 - (void)addMapToViewHierarchy {
+    [self addChildViewController:self.maplyViewController];
     [self.view addSubview:self.maplyViewController.view];
     [self.view sendSubviewToBack:self.maplyViewController.view];
-    [self addChildViewController:self.maplyViewController];
+    [self.maplyViewController didMoveToParentViewController:self];
 }
 
 @end
