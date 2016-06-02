@@ -31,8 +31,12 @@
         tileInfo.coordSys = bng;
     }
     MaplyRemoteTileSource *tileSource = [[MaplyRemoteTileSource alloc] initWithInfo:tileInfo];
-    NSString *mapName = [NSString stringWithFormat:@"%@%@", srs, layer];
-    tileSource.cacheDir = [OSMaplyTilesLayer _pathForTileSourceCacheNamed:mapName];
+    NSString *mapName = [NSString stringWithFormat:@"%@%@", [srs stringByReplacingOccurrencesOfString:@":" withString:@"-"], layer];
+    NSString *cacheDirectory = [OSMaplyTilesLayer _pathForTileSourceCacheNamed:mapName];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:cacheDirectory]) {
+        [[NSFileManager defaultManager] createDirectoryAtPath:cacheDirectory withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    tileSource.cacheDir = cacheDirectory;
 
     if ((self = [super initWithCoordSystem:tileSource.coordSys tileSource:tileSource])) {
         self.handleEdges = false;
